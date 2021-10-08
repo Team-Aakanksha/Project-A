@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to iCoder. A blog for coding enthusiasts">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/jumbotron/">
+    <!-- owl carousel  link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- owl carousel css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/features/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="events.css">
+
+    <title>Workshop and Events</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+
+        <img style="width: 50px; height: 50px;"
+        src="https://media-exp1.licdn.com/dms/image/C4D0BAQHAk87E5XdEEA/company-logo_200_200/0/1626884371399?e=2159024400&v=beta&t=t07R8XeQPYmAL8mcwG0zrLovu1pGYbYGzgAy4g1Z7E8"
+        class="logo"
+      />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="landing.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Stationary product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="e-book.html">E-book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Workshops & Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tutor.html">Tutor Online</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login to EduLearn</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get an EduLearn Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row align-items-md-stretch">
+            <div class="col-md-12">
+                <div class="h-100 p-5 text-white bg-dark rounded-3" id="jumbo">
+                    <h2>First step towards success</h2>
+                    <p>Workshops and seminars are basically financial speed dating for clueless people.Workshop begins
+                        with playing a heartbeat, every beat is a step.<br>The reason we do workshops is so we can
+                        learn, and we are fortunate that we have probably gained more from the whole experience of
+                        teaching than any one participant has.</p>
+                    <button class="btn btn-outline-light" type="button">Explore Workshops</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="workshop-container" style="margin-bottom: 0px;">
+           <div class="layout">
+               <div class="event" style="color: brown;">
+                  <h4>Workshop / Event Name</h4>
+               </div>
+               <div class="event" style="background-color: #f0b783; cursor: pointer; color: brown;">
+                  <h4>Enroll</h4>
+               </div>
+  
+           </div>
+           <div class="layout">
+              <div class="event" style="color: brown;">
+                 <h4>Workshop / Event Name</h4>
+               </div>
+                <div class="event" style="background-color: #f0b783; cursor: pointer; color: brown;">
+                   <h4>Enroll</h4>
+                </div>
+  
+            </div>
+            <div class="layout">
+                <div class="event" style="color: brown;">
+                   <h4>Workshop / Event Name</h4>
+                 </div>
+                  <div class="event" style="background-color: #f0b783; cursor: pointer; color: brown;">
+                     <h4>Enroll</h4>
+                  </div>
+  
+              </div>
+              <div class="layout">
+                <div class="event" style="color: brown;">
+                   <h4>Workshop / Event Name</h4>
+                 </div>
+                  <div class="event" style="background-color: #f0b783; cursor: pointer; color: brown;">
+                     <h4>Enroll</h4>
+                  </div>
+              </div>
+              <div id="dots"></div>
+              <span id = "more">
+                <div class="layout">
+                  <div class="event" style="color: brown;">
+                     <h4>Workshop / Event Name</h4>
+                  </div>
+                  <div class="event" style="background-color: #f0b783; cursor: pointer; color: brown;">
+                     <h4>Enroll</h4>
+                  </div>
+     
+              </div>
+              <div class="layout">
+                 <div class="event" style="color: brown;">
+                    <h4>Workshop / Event Name</h4>
+                  </div>
+                   <div class="event" style="background-color: #f0b783; cursor: pointer; color: brown;">
+                      <h4>Enroll</h4>
+                   </div>
+     
+               </div>
+               <div class="layout">
+                   <div class="event" style="color: brown;">
+                      <h4>Workshop / Event Name</h4>
+                    </div>
+                     <div class="event" style="background-color: #f0b783; cursor: pointer; color: brown;">
+                        <h4>Enroll</h4>
+                     </div>
+     
+                 </div>
+                 <div class="layout">
+                   <div class="event" style="color: brown;">
+                      <h4>Workshop / Event Name</h4>
+                    </div>
+                     <div class="event" style="background-color: #f0b783; cursor: pointer; color: brown;">
+                        <h4>Enroll</h4>
+                     </div>
+                 </div>
+              </span>
+              <div style="text-align: center;">
+                <button id="myBtn" onclick="myFunction()" style="outline: none; border-radius: 5px; background-color: rgba(165, 42, 42, 0.4);">See More</button>
+              </div>
+             
+        </div>
+    </div>    
+  </section>
+  
+  <div class="best mt-5 shadow mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="browse-heading m-5">Featured Workshops</h1>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow menu-item-card p-3 mb-3">
+                  <img
+                    src="https://image.freepik.com/free-vector/wireframe-robot-ai-artificial-intelligence-robotic-hand-machine-learning-cyber-mind-domination-concept_127544-854.jpg"
+                    class="menu-item-image w-100"/>
+                  <p class="text">Training under the best industrial experts for 3 months with certification and real time Projects... Check Free Trail</p>
+                </div>
+                <div class="shadow m-3 d-flex flex-row justify-content-center">
+                  <button class="buy shadow m-3">Free Trial</button>
+                  <button class="buy shadow m-3">Buy Now</button>
+                </div>   
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow menu-item-card p-3 mb-3">
+                  <img
+                    src="https://image.freepik.com/free-vector/people-using-vr-glasses-illustration_52683-53642.jpg"
+                    class="menu-item-image w-100"/>
+                  <p class="text">Training under the best industrial experts for 3 months with certification and real time Projects... Check Free Trail</p>
+                </div>
+                <div class="shadow m-3 d-flex flex-row justify-content-center">
+                  <button class="buy shadow m-3">Free Trial</button>
+                  <button class="buy shadow m-3">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow menu-item-card p-3 mb-3">
+                  <img
+                    src="https://image.freepik.com/free-vector/data-extraction-concept-illustration_114360-4766.jpg"
+                    class="menu-item-image w-100"/>
+                  <p class="text">Training under the best industrial experts for 3 months with certification and real time Projects... Check Free Trail</p>
+                </div>
+                <div class="shadow m-3 d-flex flex-row justify-content-center">
+                  <button class="buy shadow m-3">Free Trial</button>
+                  <button class="buy shadow m-3">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow menu-item-card p-3 mb-3">
+                  <img
+                    src="https://image.freepik.com/free-vector/artificial-intelligence-template-landing-page_23-2148331041.jpg"
+                    class="menu-item-image w-100"/>
+                  <p class="text">Training under the best industrial experts for 3 months with certification and real time Projects... Check Free Trail</p>
+                </div>
+                <div class="shadow m-3 d-flex flex-row justify-content-center">
+                  <button class="buy shadow m-3">Free Trial</button>
+                  <button class="buy shadow m-3">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+   
+    <!-- Optional JavaScript -->
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+  
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "See more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "See less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+  
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container" >
+        <div class="footer-center">
+          <h5>INFORMATION</h5>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center">
+        <h5>My ACCOUNT</h5>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Cart</a>
+        </div>
+        <div class="footer-center">
+          <h5>CONTACT US</h5>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              ofnhui echri eciru ehnriuoi ecru
+            </span>
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+              dnfuefecnr@gmail.com
+            </span>
+           
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+              123-456-789
+            </span>
+         
+          </div>
+          <div>
+            <span>
+              <i class="far fa-paper-plane"></i>
+              djnhuec, ejhnr
+            </span>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  </body>
+  
+  </html>

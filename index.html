@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to iCoder. A blog for coding enthusiasts">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>E-stationery</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <img src="images1/comp33.png" alt="" width="50" height="50">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="landing.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Stationary product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="e-book.html">E-book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Workshops & Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tutor.html">Tutor Online</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login to EduLearn</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get an EduLearn Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!--Banner Section-->
+  <div class="banner-carousel mt-3">
+    <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="banner-section-bg-container d-flex justify-content-center flex-column d-block w-100">
+                    <div class="text-center">
+                      <h1 class="banner-heading mb-3">Get Delicious Food Anytime</h1>
+                      <p class="banner-caption mb-4">Eat Smart & Healthy</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="banner-section-bg-container bg-container1 d-flex justify-content-center flex-column d-block w-100">
+                    <div class="text-center">
+                      <h1 class="banner-heading mb-3">Get Delicious Food Anytime</h1>
+                      <p class="banner-caption mb-4">Eat Smart & Healthy</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="banner-section-bg-container bg-container2 d-flex justify-content-center flex-column d-block w-100">
+                    <div class="text-center">
+                      <h1 class="banner-heading mb-3">Get Delicious Food Anytime</h1>
+                      <p class="banner-caption mb-4">Eat Smart & Healthy</p>
+                    </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!--Browse By category Section-->
+  <div class="browse mt-5 mb-3 shadow">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <h1 class="browse-heading">Browse By Category</h1>
+              </div>
+              <!--For >=Large Devices-->
+              <div class="col-12 p-5 d-none d-lg-block">
+                  <div class="d-flex flex-row categories">
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/3077/3077302.png" class="icon shadow"/>
+                              <h5 class="icon-heading">Office Supply</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/3313/3313480.png" class="icon shadow"/>
+                              <h5 class="icon-heading">School</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/4009/4009348.png" class="icon shadow"/>
+                              <h5 class="icon-heading">Artists</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://img-premium.flaticon.com/png/512/1156/premium/1156571.png?token=exp=1633260721~hmac=ac29f5b52345fbedd13674126d2c70c1" class="icon shadow"/>
+                              <h5 class="icon-heading">Markers</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/2722/2722226.png" class="icon shadow"/>
+                              <h5 class="icon-heading">Crafts</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/503/503812.png" class="icon shadow"/>
+                              <h5 class="icon-heading">Tapes</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/63/63394.png" class="icon shadow"/>
+                              <h5 class="icon-heading">Ink</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/1383/1383970.png" class="icon shadow"/>
+                              <h5 class="icon-heading">Folders</h5>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-12 mt-3 p-5 d-none d-lg-block">
+                  <div class="d-flex flex-row categories">
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/60/60492.png" class="icon shadow"/>
+                              <h5 class="icon-heading">Paper</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/1014/1014900.png" class="icon shadow"/>
+                              <h5 class="icon-heading">Refils</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/1250/1250925.png" class="icon shadow"/>
+                              <h5 class="icon-heading">Pencils</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/2206/2206009.png" class="icon shadow"/>
+                              <h5 class="icon-heading">Colors</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/254/254349.png" class="icon shadow"/>
+                              <h5 class="icon-heading">Pens</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://img-premium.flaticon.com/png/512/3356/premium/3356425.png?token=exp=1633260916~hmac=71844d68eae2b9abee24b5cfa82549cd" class="icon shadow"/>
+                              <h5 class="icon-heading">Work From Home</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://cdn-icons-png.flaticon.com/512/876/876210.png" class="icon shadow"/>
+                              <h5 class="icon-heading">Clips</h5>
+                          </div>
+                      </a>
+                      <a class="link" href="#">
+                          <div class="d-flex flex-row ml-2 mr-2">
+                              <img src="https://img-premium.flaticon.com/png/512/2203/premium/2203671.png?token=exp=1633260271~hmac=cfa8a218c777802469fa4c85e72fa32c" class="icon shadow"/>
+                              <h5 class="icon-heading">Brands</h5>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <!--For >=Smaller Devices-->
+              <div class="col-12 d-block d-lg-none mt-3 mb-3">
+                <div class="d-flex flex-row justify-content-around">
+                  <a class="link" href="#">
+                    <div class="d-flex flex-row ml-2 mr-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60492.png" class="icon shadow"/>
+                        <h5 class="icon-heading">Paper</h5>
+                    </div>
+                  </a>
+                  <a class="link" href="#">
+                    <div class="d-flex flex-row ml-2 mr-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3313/3313480.png" class="icon shadow"/>
+                        <h5 class="icon-heading">School</h5>
+                    </div>
+                  </a>
+                  <a class="link" href="#">
+                    <div class="d-flex flex-row ml-2 mr-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4009/4009348.png" class="icon shadow"/>
+                        <h5 class="icon-heading">Artists</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 d-block d-lg-none mt-3 mb-3">
+                <div class="d-flex flex-row justify-content-around">
+                  <a class="link" href="#">
+                    <div class="d-flex flex-row ml-2 mr-2">
+                        <img src="https://img-premium.flaticon.com/png/512/1156/premium/1156571.png?token=exp=1633260721~hmac=ac29f5b52345fbedd13674126d2c70c1" class="icon shadow"/>
+                        <h5 class="icon-heading">Markers</h5>
+                    </div>
+                  </a>
+                  <a class="link" href="#">
+                    <div class="d-flex flex-row ml-2 mr-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/503/503812.png" class="icon shadow"/>
+                        <h5 class="icon-heading">Tapes</h5>
+                    </div>
+                  </a>
+                  <a class="link" href="#">
+                    <div class="d-flex flex-row ml-2 mr-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/63/63394.png" class="icon shadow"/>
+                        <h5 class="icon-heading">Ink</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 d-block d-lg-none mt-3 mb-3">
+                <div class="d-flex flex-row justify-content-around">
+                  <a class="link" href="#">
+                    <div class="d-flex flex-row ml-2 mr-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1383/1383970.png" class="icon shadow"/>
+                        <h5 class="icon-heading">Folders</h5>
+                    </div>
+                  </a>
+                  <a class="link" href="#">
+                    <div class="d-flex flex-row ml-2 mr-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1250/1250925.png" class="icon shadow"/>
+                        <h5 class="icon-heading">Pencils</h5>
+                    </div>
+                  </a>
+                  <a class="link" href="#">
+                    <div class="d-flex flex-row ml-2 mr-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3077/3077302.png" class="icon shadow"/>
+                        <h5 class="icon-heading">Office Supply</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 d-block d-lg-none mt-3 mb-3">
+                <div class="d-flex flex-row justify-content-around">
+                  <a class="link" href="#">
+                    <div class="d-flex flex-row ml-2 mr-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2206/2206009.png" class="icon shadow"/>
+                        <h5 class="icon-heading">Colors</h5>
+                    </div>
+                  </a>
+                  <a class="link" href="#">
+                    <div class="d-flex flex-row ml-2 mr-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/254/254349.png" class="icon shadow"/>
+                        <h5 class="icon-heading">Pens</h5>
+                    </div>
+                  </a>
+                  <a class="link" href="#">
+                    <div class="d-flex flex-row ml-2 mr-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/876/876210.png" class="icon shadow"/>
+                        <h5 class="icon-heading">Clips</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--Best Selling-->
+  <div class="best-selling mt-3 mb-2">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <h1 class="browse-heading mt-3">Best Selling Books</h1>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="shadow menu-item-card p-3 mb-3">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/I/41MwnqF77XS._SX198_BO1,204,203,200_QL40_FMwebp_.jpg"
+                      class="menu-item-image w-100"/>
+                  </div>
+                  <div class="shadow m-3">
+                    <h1 class="menu-card-title pt-2">Dracula</h1>
+                    <button class="buy shadow m-3">Buy Now</button>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="shadow menu-item-card p-3 mb-3">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/I/51eqW-3TeJL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+                      class="menu-item-image w-100"/>
+                    <h1 class="menu-card-title"></h1>
+                  </div>
+                  <div class="shadow m-3">
+                    <h1 class="menu-card-title pt-2">One Arranged Marriage Murder</h1>
+                    <button class="buy shadow m-3">Buy Now</button>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="shadow menu-item-card p-3 mb-3">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/I/41ONn3w3WkS._SX198_BO1,204,203,200_QL40_FMwebp_.jpg"
+                      class="menu-item-image w-100"/>
+                    <h1 class="menu-card-title"></h1>
+                  </div>
+                  <div class="shadow m-3">
+                    <h1 class="menu-card-title pt-2"> Heart Of Darkness</h1>
+                    <button class="buy shadow m-3">Buy Now</button>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="shadow menu-item-card p-3 mb-3">
+                    <img
+                      src="https://images-na.ssl-images-amazon.com/images/I/81vmJCNCm6L.jpg"
+                      class="menu-item-image w-100"/>
+                    <h1 class="menu-card-title"></h1>
+                  </div>
+                  <div class="shadow m-3">
+                    <h1 class="menu-card-title pt-2">Python Crash Course</h1>
+                    <button class="buy shadow m-3">Buy Now</button>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="shadow menu-item-card p-3 mb-3">
+                    <img
+                      src="https://images-na.ssl-images-amazon.com/images/I/713PolAKv8L.jpg"
+                      class="menu-item-image w-100"/>
+                    <h1 class="menu-card-title"></h1>
+                  </div>
+                  <div class="shadow m-3">
+                    <h1 class="menu-card-title pt-2">Quantitaive Aptitude</h1>
+                    <button class="buy shadow m-3">Buy Now</button>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="shadow menu-item-card p-3 mb-3">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/I/41ekOc6O1ML._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+                      class="menu-item-image w-100"/>
+                    <h1 class="menu-card-title"></h1>
+                  </div>
+                  <div class="shadow m-3">
+                    <h1 class="menu-card-title pt-2">Life is What You Make it</h1>
+                    <button class="buy shadow m-3">Buy Now</button>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="shadow menu-item-card p-3 mb-3">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/I/51YP7fM361S._SX198_BO1,204,203,200_QL40_FMwebp_.jpg"
+                      class="menu-item-image w-100"/>
+                    <h1 class="menu-card-title"></h1>
+                  </div>
+                  <div class="shadow m-3">
+                    <h1 class="menu-card-title pt-2">The Time Machine</h1>
+                    <button class="buy shadow m-3">Buy Now</button>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                  <div class="shadow menu-item-card p-3 mb-3">
+                    <img
+                      src="https://images-na.ssl-images-amazon.com/images/I/71EGWJeU3iL.jpg"
+                      class="menu-item-image w-100"/>
+                    <h1 class="menu-card-title"></h1>
+                  </div>
+                  <div class="shadow m-3">
+                    <h1 class="menu-card-title pt-2">Think and Grow Rich</h1>
+                    <button class="buy shadow m-3">Buy Now</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--Brands Section-->
+  <div class="brands mt-5 mb-5 shadow">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="browse-heading m-3 p-3">Browse By Brands</h1>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 shadow mb-3">
+          <div class="menu-item-card mt-3 d-flex flex-column justify-content-center">
+            <img src="https://m.media-amazon.com/images/I/61NUA0O7WTL._SL1100_.jpg" class="menu-item-image shadow mb-3"/>
+          </div>
+          <h1 class="browse-heading">Classmate</h1>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 shadow mb-3">
+          <div class="menu-item-card mt-3 d-flex flex-column justify-content-center">
+            <img src="https://m.media-amazon.com/images/I/715r7Cxz9+L._SL1169_.jpg" class="menu-item-image shadow mb-3"/>
+          </div>
+          <h1 class="browse-heading">Doms</h1>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 shadow mb-3">
+          <div class="menu-item-card mt-3 d-flex flex-column justify-content-center">
+            <img src="https://moulavidukaan.com/wp-content/uploads/2020/08/730008.jpg" class="menu-item-image shadow mb-3"/>
+          </div>
+          <h1 class="browse-heading">Camlin</h1>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 shadow mb-3">
+          <div class="menu-item-card mt-3 d-flex flex-column justify-content-center">
+            <img src="https://columnfivemedia.com/wp-content/uploads/2021/03/Best-books-on-branding-4-scaled.jpg" class="menu-item-image shadow mb-3"/>
+          </div>
+          <h1 class="browse-heading text-center">Navneet</h1>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 shadow mb-3">
+          <div class="menu-item-card mt-3 d-flex flex-column justify-content-center">
+            <img src="https://m.media-amazon.com/images/I/51-2X0BqfyL.jpg" class="menu-item-image shadow mb-3"/>
+          </div>
+          <h1 class="browse-heading">Mead</h1>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 shadow mb-3">
+          <div class="menu-item-card mt-3 d-flex flex-column justify-content-center">
+            <img src="https://m.media-amazon.com/images/I/51IA4c0P5QL.jpg" class="menu-item-image shadow mb-3"/>
+          </div>
+          <h1 class="browse-heading">Luxor</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Stores and Maps-->
+  <div class="shadow mb-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-5 mb-3">
+          <h1 class="fe-heading">Physical Stores</h1>
+        </div>
+        <div class="col-11 col-md-6 mt-3">
+          <div class="ls-details-card d-flex flex-row justify-content-center shadow">
+            <div class="d-flex flex-column justify-content-start ls-details mt-2">
+              <h4 class="fe-heading mt-2">Universal Store</h4>
+              <h4 class="fe-heading">Location: Bangalore Urban</h4>
+              <h4 class="fe-heading">Price: 500/-</h4>
+              <h4 class="fe-heading">Rating: 4.7/5</h4>
+            </div>
+            <div class="ls-image-container mt-3 ml-5 p-3 mb-3 shadow">
+              <img src="https://cdn-icons-png.flaticon.com/512/1198/1198361.png" class="ls-image">
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-md-6 mt-3">
+          <div class="location shadow">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d124425.7029919123!2d77.58522247858065!3d12.952438999942284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sstationery%20in%20bangalore!5e0!3m2!1sen!2sin!4v1631770273827!5m2!1sen!2sin" width="100%" height="100%" style="border-radius: 16px;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-11 col-md-6 mt-5 mb-3">
+          <div class="ls-details-card d-flex flex-row justify-content-center shadow">
+            <div class="d-flex flex-column justify-content-start ls-details mt-2">
+              <h4 class="fe-heading mt-2">Raaj Store</h4>
+              <h4 class="fe-heading">Location: Bangalore Urban</h4>
+              <h4 class="fe-heading">Price: 900/-</h4>
+              <h4 class="fe-heading">Rating: 4.2/5</h4>
+            </div>
+            <div class="ls-image-container mt-3 ml-5 p-3 mb-3 shadow">
+              <img src="https://cdn-icons-png.flaticon.com/512/88/88988.png" class="ls-image">
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-md-6 mt-5 mb-3">
+          <div class="location shadow">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d124425.7029919123!2d77.58522247858065!3d12.952438999942284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sstationery%20in%20bangalore!5e0!3m2!1sen!2sin!4v1631770273827!5m2!1sen!2sin" width="100%" height="100%" style="border-radius: 16px" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <footer id="footer" class="section footer w-100">
+    <div class="container mt-3 pt-3 shadow container-class">
+      <div class="footer-container">
+        <div class="footer-center pt-2">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center pt-2">
+        <h3>My ACCOUNT</h3>
+          <a href="#" class="">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Cart</a>
+        </div>
+        <div class="footer-center pt-2">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            ofnhui echri eciru ehnriuoi ecru
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            dnfuefecnr@gmail.com
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            123-456-789
+          </div>
+          <div>
+            <span>
+              <i class="far fa-paper-plane"></i>
+            </span>
+           djnhuec, ejhnr
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

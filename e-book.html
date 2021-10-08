@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to iCoder. A blog for coding enthusiasts">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"/>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/jumbotron/">
+    <!-- owl carousel  link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- owl carousel css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/features/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="e-book.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>E-Books</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" >
+
+        <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHAk87E5XdEEA/company-logo_200_200/0/1626884371399?e=2159024400&v=beta&t=t07R8XeQPYmAL8mcwG0zrLovu1pGYbYGzgAy4g1Z7E8" alt="" width="50" height="50">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="landing.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Stationary product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="e-book.html">E-book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Workshops & Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tutor.html">Tutor Online</a>
+                </li>
+                   </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login to EduLearn</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get an EduLearn Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="container py-4">
+        <div class="row align-items-md-stretch">
+            <div class="col-md-12">
+                <div class="h-100 p-5 text-white bg-dark rounded-3" id="jumbo">
+                    <h2>Smart and efficient study</h2>
+                    <p>Teaching kids to count is fine, but teaching them what counts is best.<br>Teachers have three
+                        loves: love of learning, love of learners, and the love of bringing the first two loves
+                        together.</p>
+                    <button class="btn btn-outline-light" type="button">Browse tutorials</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     <!-- banner ends-->
+<!-- 
+     image gallery starts -->
+     <section id="searching" id="azy">
+        <div class="grid-container" >
+            <div class="item1y">
+                  <div class="search">
+                      <input type="text" class="searchTerm" placeholder="Search books">
+                      <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                     </button>
+                  </div>
+              </div>
+             
+            <div class="item2y">
+                <div class="browse-container">
+                    <div class="browse-title">
+                        Browse Categories
+                    </div>
+                    <hr class="fortitle">
+                    <div class="browse-content">
+                       <a href="#"> Arts & Photography</a>
+                    </div>
+                    <hr>
+                    <div class="browse-content">
+                      <a href="#">Biographies</a>
+                   </div>
+                   <hr>
+                   <div class="browse-content">
+                      <a href="#">Business & Money</a>
+                   </div>
+                   <hr>
+                   <div class="browse-content">
+                      <a href="#">Calenders</a>
+                   </div>
+                   <hr>
+                   <div class="browse-content">
+                      <a href="#">Childern's Books</a>
+                   </div>
+                   <hr>
+                   <div class="browse-content">
+                      <a href="#">Comics</a>
+                   </div>
+                   <hr>
+                   <div class="browse-content">
+                      <a href="#">Performance Filters</a>
+                   </div>
+                   <hr>
+                   <div class="browse-content">
+                      <a href="#">Cookbooks</a>
+                   </div>
+                   
+                </div>
+            </div>
+            <div class="item3y">
+
+                  <section class="gallary container">
+                      <figure class="gallary-item item-1">
+                      <img src="./images/comics.jpeg" alt="" class="gallary-img">
+                      <div class="content">
+                          <h2>Comic Books</h2>
+                          <a href="#">Explore</a>
+                      </div>
+                      </figure>
+                      
+                      <figure class="gallary-item item-2">
+                      <img src="./images/photographybook.jpeg" alt="" class="gallary-img">
+                      <div class="content">
+                          <h2>Arts & Photography</h2>
+                          <a href="#">Explore</a>
+                      </div>
+                      </figure>
+                      
+                      <figure class="gallary-item item-3">
+                      <img src="./images/businesssbook.jpeg" alt="" class="gallary-img">
+                      <div class="content">
+                          <h2>Business and Money</h2>
+                          <a href="#">Explore</a>
+                      </div>
+                      </figure>
+                      
+                      <figure class="gallary-item item-4">
+                      <img src="./images/childbook.jpeg" alt="" class="gallary-img">
+                      <div class="content">
+                          <h2>Children's Books</h2>
+                          <a href="#">Explore</a>
+                      </div>
+                      </figure>
+                      <figure class="gallary-item item-5">
+                          <img src="./images/travelbooks.jpeg" alt="" class="gallary-img">
+                          <div class="content">
+                              <h2>Travel Books</h2>
+                              <a href="#">Explore</a>
+                          </div>
+                          </figure>
+                  </section>
+                  <div class="mini-browse">
+                    <div class="mini-content">
+                      <a href="#"> Arts & Photography</a>
+                      <a href="#">Biographies</a>
+                      <a href="#">Business & Money</a>
+                      <a href="#">Calenders</a>
+                      <a href="#">Childern's Books</a>
+                      <a href="#">Comics</a>
+                      <a href="#">Performance Filters</a>
+                      <a href="#">Cookbooks</a>
+                    </div>
+                    <a href="#"><h4>+ More Categories</h4></a>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- image gallery ends -->
+     <div class="activate">
+        <main>
+    
+    
+          <section>
+            <h1 class="product-title">Best Sellers</h1>
+            <div class="glide" id="glide4">
+              <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                  <li class="glide__slide">
+                    <div class="product">
+                      <div class="product-header">
+                        <img src="images/book7.jpeg" alt="product">
+                      </div>
+                      <div class="product-footer">
+                        <h3>Book 1</h3>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                          <h4><i class="fas fa-rupee-sign"></i>150</h4>
+                        </div>
+                        <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                      </div>
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i class="far fa-heart"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="product">
+                      <div class="product-header">
+                        <img src="images/book2-removebg-preview.png" alt="product">
+                      </div>
+                      <div class="product-footer">
+                        <h3>Book 2</h3>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                          <h4><i class="fas fa-rupee-sign"></i>100</h4>
+                        </div>
+                        <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                      </div>
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i class="far fa-heart"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="product">
+                      <div class="product-header">
+                        <img src="images/book3.jpeg" alt="product">
+                      </div>
+                      <div class="product-footer">
+                        <h3>book 3</h3>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                          <h4><i class="fas fa-rupee-sign"></i>150</h4>
+                        </div>
+                        <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                      </div>
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i class="far fa-heart"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="product">
+                      <div class="product-header">
+                        <img src="images/book4.jpeg" alt="product">
+                      </div>
+                      <div class="product-footer">
+                        <h3>book 4</h3>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                          <h4><i class="fas fa-rupee-sign"></i>100</h4>
+                        </div>
+                        <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                      </div>
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i class="far fa-heart"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="product">
+                      <div class="product-header">
+                        <img src="images/book5.jpeg" alt="product">
+                      </div>
+                      <div class="product-footer">
+                        <h3>book 5</h3>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                          <h4><i class="fas fa-rupee-sign"></i> 50</h4>
+                        </div>
+                        <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                      </div>
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i class="far fa-heart"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="product">
+                      <div class="product-header">
+                        <img src="images/book6.jpg" alt="product">
+                      </div>
+                      <div class="product-footer">
+                        <h3>book 6</h3>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                          <h4><i class="fas fa-rupee-sign"></i>60</h4>
+                        </div>
+                        <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                      </div>
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i class="far fa-heart"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                    class="fas fa-arrow-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                    class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </section>
+          </main>
+    
+          <h1 class="product-title" id="business">Best Business/Motivational Collection</h1>
+                <div class="glide" id="glide5">
+                   <div class="glide__track" data-glide-el="track">
+                     <ul class="glide__slides">
+                       
+                       <li class="glide__slide">
+                           <div class="product">
+                               <div class="product-header">
+                                 <img src="images/book23.jpeg" alt="product">
+                               </div>
+                               <div class="product-footer">
+                                 <h3>book 3</h3>
+                                 <div class="rating">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="far fa-star"></i>
+                                 </div>
+                                 <div class="product-price">
+                                   <h4><i class="fas fa-rupee-sign"></i>150</h4>
+                                 </div>
+                                 <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                               </div>
+                               <ul>
+                                   <li>
+                                       <a href="#">
+                                         <i class="far fa-heart"></i>
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                         <i class="fas fa-shopping-cart"></i>
+                                       </a>
+                                     </li>
+                               </ul>
+                             </div>
+                       </li>
+                       <li class="glide__slide">
+                           <div class="product">
+                               <div class="product-header">
+                                 <img src="images/book24.jpeg" alt="product">
+                               </div>
+                               <div class="product-footer">
+                                 <h3>book 4</h3>
+                                 <div class="rating">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="far fa-star"></i>
+                                 </div>
+                                 <div class="product-price">
+                                   <h4><i class="fas fa-rupee-sign"></i>100</h4>
+                                 </div>
+                                 <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                               </div>
+                               <ul>
+                                   <li>
+                                       <a href="#">
+                                         <i class="far fa-heart"></i>
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                         <i class="fas fa-shopping-cart"></i>
+                                       </a>
+                                     </li>
+                               </ul>
+                             </div>
+                       </li>
+                       <li class="glide__slide">
+                           <div class="product">
+                               <div class="product-header">
+                                 <img src="images/book25.jpeg" alt="product">
+                               </div>
+                               <div class="product-footer">
+                                 <h3>book 5</h3>
+                                 <div class="rating">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="far fa-star"></i>
+                                 </div>
+                                 <div class="product-price">
+                                   <h4><i class="fas fa-rupee-sign"></i> 50</h4>
+                                 </div>
+                                 <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                               </div>
+                               <ul>
+                                   <li>
+                                       <a href="#">
+                                         <i class="far fa-heart"></i>
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                         <i class="fas fa-shopping-cart"></i>
+                                       </a>
+                                     </li>
+                               </ul>
+                             </div>
+                       </li>
+                       <li class="glide__slide">
+                           <div class="product">
+                               <div class="product-header">
+                                 <img src="images/book26.jpeg" alt="product">
+                               </div>
+                               <div class="product-footer">
+                                 <h3>book 6</h3>
+                                 <div class="rating">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="far fa-star"></i>
+                                 </div>
+                                 <div class="product-price">
+                                   <h4><i class="fas fa-rupee-sign"></i>60</h4>
+                                 </div>
+                                 <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                               </div>
+                               <ul>
+                                   <li>
+                                       <a href="#">
+                                         <i class="far fa-heart"></i>
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                         <i class="fas fa-shopping-cart"></i>
+                                       </a>
+                                     </li>
+                               </ul>
+                             </div>
+                       </li>
+                     </ul>
+                   </div>
+                   <div class="glide__arrows" data-glide-el="controls">
+                       <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+                       <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                           class="fas fa-arrow-right"></i></button>
+                   </div>
+               </div>
+    
+               
+             </section>
+    
+             <section>
+              <h1 class="product-title" id="recommended">Recommended Academic Books</h1>
+              <div class="glide" id="glide6">
+                 <div class="glide__track" data-glide-el="track">
+                   <ul class="glide__slides">
+                     <li class="glide__slide">
+                         <div class="product">
+                             <div class="product-header">
+                               <img src="images/book31.jpeg" alt="product">
+                             </div>
+                             <div class="product-footer">
+                               <h3>book 1</h3>
+                               <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="far fa-star"></i>
+                               </div>
+                               <div class="product-price">
+                                 <h4><i class="fas fa-rupee-sign"></i>150</h4>
+                               </div>
+                               <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                             </div>
+                             <ul>
+                                 <li>
+                                     <a href="#">
+                                       <i class="far fa-heart"></i>
+                                     </a>
+                                   </li>
+                                   <li>
+                                     <a href="#">
+                                       <i class="fas fa-shopping-cart"></i>
+                                     </a>
+                                   </li>
+                             </ul>
+                           </div>
+                     </li>
+                     <li class="glide__slide">
+                         <div class="product">
+                             <div class="product-header">
+                               <img src="images/book32.jpeg" alt="product">
+                             </div>
+                             <div class="product-footer">
+                               <h3>book 2</h3>
+                               <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="far fa-star"></i>
+                               </div>
+                               <div class="product-price">
+                                 <h4><i class="fas fa-rupee-sign"></i>100</h4>
+                               </div>
+                               <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                             </div>
+                             <ul>
+                                 <li>
+                                     <a href="#">
+                                       <i class="far fa-heart"></i>
+                                     </a>
+                                   </li>
+                                   <li>
+                                     <a href="#">
+                                       <i class="fas fa-shopping-cart"></i>
+                                     </a>
+                                   </li>
+                             </ul>
+                           </div>
+                     </li>
+                     <li class="glide__slide">
+                         <div class="product">
+                             <div class="product-header">
+                               <img src="images/book33-removebg-preview.png" alt="product">
+                             </div>
+                             <div class="product-footer">
+                               <h3>book 3</h3>
+                               <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="far fa-star"></i>
+                               </div>
+                               <div class="product-price">
+                                 <h4><i class="fas fa-rupee-sign"></i>150</h4>
+                               </div>
+                               <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                             </div>
+                             <ul>
+                                 <li>
+                                     <a href="#">
+                                       <i class="far fa-heart"></i>
+                                     </a>
+                                   </li>
+                                   <li>
+                                     <a href="#">
+                                       <i class="fas fa-shopping-cart"></i>
+                                     </a>
+                                   </li>
+                             </ul>
+                           </div>
+                     </li>
+                     <li class="glide__slide">
+                         <div class="product">
+                             <div class="product-header">
+                               <img src="images/book34.jpg" alt="product">
+                             </div>
+                             <div class="product-footer">
+                               <h3>book 4</h3>
+                               <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="far fa-star"></i>
+                               </div>
+                               <div class="product-price">
+                                 <h4><i class="fas fa-rupee-sign"></i>100</h4>
+                               </div>
+                               <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                             </div>
+                             <ul>
+                                 <li>
+                                     <a href="#">
+                                       <i class="far fa-heart"></i>
+                                     </a>
+                                   </li>
+                                   <li>
+                                     <a href="#">
+                                       <i class="fas fa-shopping-cart"></i>
+                                     </a>
+                                   </li>
+                             </ul>
+                           </div>
+                     </li>
+                     <li class="glide__slide">
+                         <div class="product">
+                             <div class="product-header">
+                               <img src="images/book35.jpeg" alt="product">
+                             </div>
+                             <div class="product-footer">
+                               <h3>book 5</h3>
+                               <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="far fa-star"></i>
+                               </div>
+                               <div class="product-price">
+                                 <h4><i class="fas fa-rupee-sign"></i> 50</h4>
+                               </div>
+                               <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                             </div>
+                             <ul>
+                                 <li>
+                                     <a href="#">
+                                       <i class="far fa-heart"></i>
+                                     </a>
+                                   </li>
+                                   <li>
+                                     <a href="#">
+                                       <i class="fas fa-shopping-cart"></i>
+                                     </a>
+                                   </li>
+                             </ul>
+                           </div>
+                     </li>
+                     <li class="glide__slide">
+                         <div class="product">
+                             <div class="product-header">
+                               <img src="images/book36.jpeg" alt="product">
+                             </div>
+                             <div class="product-footer">
+                               <h3>book 7</h3>
+                               <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="far fa-star"></i>
+                               </div>
+                               <div class="product-price">
+                                 <h4><i class="fas fa-rupee-sign"></i>60</h4>
+                               </div>
+                               <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                             </div>
+                             <ul>
+                                 <li>
+                                     <a href="#">
+                                       <i class="far fa-heart"></i>
+                                     </a>
+                                   </li>
+                                   <li>
+                                     <a href="#">
+                                       <i class="fas fa-shopping-cart"></i>
+                                     </a>
+                                   </li>
+                             </ul>
+                           </div>
+                     </li>
+                     <li class="glide__slide">
+                         <div class="product">
+                             <div class="product-header">
+                               <img src="images/book37.jpeg" alt="product">
+                             </div>
+                             <div class="product-footer">
+                               <h3>book 7</h3>
+                               <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="far fa-star"></i>
+                               </div>
+                               <div class="product-price">
+                                 <h4><i class="fas fa-rupee-sign"></i>70</h4>
+                               </div>
+                               <button class=" order btn btn-primary" type="submit">Add to Cart</button>
+                             </div>
+                             <ul>
+                                 <li>
+                                     <a href="#">
+                                       <i class="far fa-heart"></i>
+                                     </a>
+                                   </li>
+                                   <li>
+                                     <a href="#">
+                                       <i class="fas fa-shopping-cart"></i>
+                                     </a>
+                                   </li>
+                             </ul>
+                           </div>
+                     </li>
+                   </ul>
+                 </div>
+                 <div class="glide__arrows" data-glide-el="controls">
+                     <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+                     <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                         class="fas fa-arrow-right"></i></button>
+                 </div>
+             </div>
+    
+             
+           </section>
+      </div>
+
+   
+    
+    <!-- <h1 class="reaction" id="amazon">Our Partners </h1>  -->
+    <div class="alumni shadow mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="fe-heading">Our Partners</h1>
+          </div>
+          <div class="col-12 mt-3 p-3">
+            <div class="d-flex flex-row justify-content-center shadow">
+              <img src="images/logo1.png" class="alumni-image shadow m-3 p-3" id="program1"/>
+              <img src="images/logo2.png" id="program2"/>
+              <img src="images/logo3.png" class="alumni-image shadow m-3 p-3" id="program3"/>
+              <img src="images/logo4.png" id="program4"/>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+    <!-- footer starts -->
+
+    <footer id="footer" class="section footer">
+        <div class="container" id="negative">
+          <div class="footer-container">
+            <div class="footer-center">
+              <h3>INFORMATION</h3>
+              <a href="#">About Us</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Site Map</a>
+            </div>
+            <div class="footer-center">
+              <h3>My ACCOUNT</h3>
+              <a href="#">My Account</a>
+              <a href="#">Order History</a>
+              <a href="#">Cart</a>
+            </div>
+            <div class="footer-center">
+              <h3>CONTACT US</h3>
+              <div>
+                <span>
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                  ehnriuoi ecru
+              </div>
+              <div>
+                <span>
+                  <i class="far fa-envelope"></i>
+                </span>
+                efecnr@gmail.com
+              </div>
+              <div>
+                <span>
+                  <i class="fas fa-phone"></i>
+                </span>
+                123-456-789
+              </div>
+              <div>
+                <span>
+                  <i class="far fa-paper-plane"></i>
+                </span>
+                djnhuec, ejhnr
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </footer>
+
+    <!-- footer ends -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <script src="js/e-book.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+
+
+<!-- jquery owl carousel link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- owl carousel js cdn link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+
+        $(document).ready(function () {
+            $('.post-container').owlCarousel({
+                pagination: false,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    700: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    }
+                }
+            })
+        })
+
+
+       
+    </script>
+
+
+
+
+
+</body>
+
+</html>

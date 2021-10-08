@@ -1,0 +1,195 @@
+:root {
+  --white: #fff;
+  --black: #222;
+  --grey1: #a8a8a8;
+  --grey: #444;
+  --grey2: #959595;
+  --grey-alt: #d1e2e9;
+  --yellow: #fcde67;
+  --blue: #5bccf6;
+}
+
+.nav-item {
+  font-size: 20px;
+
+  padding-left: 10px;
+}
+
+.workshop-container {
+  position: relative;
+  background-color: rgba(165, 42, 42, 0.4);
+  padding: 40px 20px;
+  border-width: 5px;
+  margin: 10px 60px;
+  border-radius: 10px;
+}
+
+.workshop-container h4 {
+  font-size: 1.2rem;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#more {
+  display: none;
+}
+
+.event {
+  border-style: solid;
+  border-color: blanchedalmond;
+  background-color: #fad6a4;
+  padding: 10px 50px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.browse-menu {
+  height: 50vh;
+}
+
+.browse-heading {
+  font-family: "Roboto";
+}
+
+.menu-item-card {
+  border-radius: 16px;
+  height: 300px;
+}
+
+.menu-item-card:hover {
+  background-image: linear-gradient(#a9f1df, #ffbbbb);
+}
+
+.menu-item-image {
+  border-radius: 16px;
+  height: 65%;
+}
+.menu-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+.buy {
+  border-radius: 10px;
+  font-family: "roboto";
+  border: none;
+  width: 100px;
+  height: 40px;
+}
+
+.fe-heading {
+  font-family: "roboto";
+}
+
+.buy:hover {
+  background-color: #222;
+  color: white;
+}
+
+.book {
+  margin-left: 15px;
+  border-radius: 18px;
+  height: 50%;
+}
+
+.see {
+  width: 50%;
+  border-radius: 16px;
+}
+
+.alumni-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.text {
+  font-family: "roboto";
+}
+
+.text:hover {
+  font-weight: bold;
+}
+
+.footer {
+  background-color: var(--black);
+  margin: auto;
+  line-height: 3rem;
+}
+
+.footer h5 {
+  margin-top: 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--white);
+}
+
+.footer-center a:link,
+.footer-center a:visited {
+  display: block;
+  color: var(--grey2);
+  font-size: 1 rem;
+  transition: 0.6s;
+}
+
+.footer-center span {
+  font-size: 1rem;
+}
+
+.footer-center a:hover {
+  color: var(grey1);
+}
+
+.footer-center div {
+  color: var(--grey2);
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
+.all-products {
+  display: flex;
+  justify-content: space-around;
+}
+.search-box {
+  margin-right: 2rem;
+}
+.footer-icon {
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 996px) {
+  .workshop-container {
+    position: relative;
+    padding: 40px 10px;
+    border-width: 5px;
+    margin: 20px 0px;
+    border-radius: 10px;
+  }
+
+  .event {
+    border-style: solid;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .event h4 {
+    font-size: 1rem;
+  }
+}
