@@ -862,7 +862,33 @@ margin-left:6px;
     }
   
   
+    #bigbasket{
+      list-style-type: none;
+  }
   
+  
+  
+  .bigb{
+      padding:5px;
+      background-color: #fff;
+      text-decoration: none;
+      margin-left: 80%;
+  }
+  
+  .cart ion-icon{
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+  }
+  
+  .cart a{
+      background-color: royalblue;
+      color:white;
+      cursor:pointer;
+      text-decoration: none;
+      border-radius: 5px;
+      
+  } 
   
   
          
