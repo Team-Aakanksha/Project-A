@@ -40,13 +40,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="e-book.css">
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <title>E-Books</title>
+    <title>e-learning platform</title>
 </head>
 
 <body>
@@ -62,19 +63,19 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="landing.html">Home</a>
+                    <a class="nav-link" href="/index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Stationary product</a>
+                    <a class="nav-link" href="/stationary.html">Stationary product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="e-book.html">E-book</a>
+                    <a class="nav-link" href="/book.html">E-book</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="events.html">Workshops & Events</a>
+                    <a class="nav-link" href="/events.html">Workshops & Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tutor.html">Tutor Online</a>
+                    <a class="nav-link" href="/tutor.html">Tutor Online</a>
                 </li>
                    </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -177,7 +178,8 @@
                     <p>Teaching kids to count is fine, but teaching them what counts is best.<br>Teachers have three
                         loves: love of learning, love of learners, and the love of bringing the first two loves
                         together.</p>
-                    <button class="btn btn-outline-light" type="button">Browse tutorials</button>
+                        <!-- <button class="btn btn-outline-light" type="button">Browse Books</button> -->
+                        <a href="/explorebooks.html"><button class="btn btn-outline-light" type="button">Browse Books</button></a>
                 </div>
             </div>
 
@@ -195,6 +197,11 @@
                         <i class="fa fa-search"></i>
                      </button>
                   </div>
+               <li class="cart" id="bigbasket">
+                 <a class="bigb" href="#">
+                   <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                 </a>
+               </li>
               </div>
              
             <div class="item2y">
@@ -244,7 +251,7 @@
                       <img src="./images/comics.jpeg" alt="" class="gallary-img">
                       <div class="content">
                           <h2>Comic Books</h2>
-                          <a href="#">Explore</a>
+                          <a href="/explorebooks.html">Explore</a>
                       </div>
                       </figure>
                       
@@ -252,7 +259,7 @@
                       <img src="./images/photographybook.jpeg" alt="" class="gallary-img">
                       <div class="content">
                           <h2>Arts & Photography</h2>
-                          <a href="#">Explore</a>
+                          <a href="/explorebooks.html">Explore</a>
                       </div>
                       </figure>
                       
@@ -260,7 +267,7 @@
                       <img src="./images/businesssbook.jpeg" alt="" class="gallary-img">
                       <div class="content">
                           <h2>Business and Money</h2>
-                          <a href="#">Explore</a>
+                          <a href="/explorebooks.html">Explore</a>
                       </div>
                       </figure>
                       
@@ -268,14 +275,14 @@
                       <img src="./images/childbook.jpeg" alt="" class="gallary-img">
                       <div class="content">
                           <h2>Children's Books</h2>
-                          <a href="#">Explore</a>
+                          <a href="/explorebooks.html">Explore</a>
                       </div>
                       </figure>
                       <figure class="gallary-item item-5">
                           <img src="./images/travelbooks.jpeg" alt="" class="gallary-img">
                           <div class="content">
                               <h2>Travel Books</h2>
-                              <a href="#">Explore</a>
+                              <a href="/explorebooks.html">Explore</a>
                           </div>
                           </figure>
                   </section>
@@ -1011,6 +1018,8 @@
 
 <!-- owl carousel js cdn link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script>
 
