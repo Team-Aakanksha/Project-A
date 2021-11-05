@@ -29,7 +29,7 @@
     <title>e-learning platform</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
 
         <img style="width: 50px; height: 50px;"
         src="https://media-exp1.licdn.com/dms/image/C4D0BAQHAk87E5XdEEA/company-logo_200_200/0/1626884371399?e=2159024400&v=beta&t=t07R8XeQPYmAL8mcwG0zrLovu1pGYbYGzgAy4g1Z7E8"
@@ -150,7 +150,46 @@
             </div>
         </div>
     </div>
-    <div class="category">
+
+<!-- enroll modal -->
+
+    <div class="modal fade" id="enrollModal" tabindex="-1" role="dialog" aria-labelledby="enrollModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Enroll</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name"
+                            aria-describedby="name1">
+                    </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">Your Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail2"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                          <label for="phone">Your Mobile Number</label>
+                          <input type="tel" id="phone" name="phone" class="form-control">   
+                        </div>  
+
+                        <a href="checkout.html">Checkout</a>
+                        <button type="submit" class="btn btn-success">Share on WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="category" style="margin-top: 100px;">
         <a href="#about" class="cat-word">
             About Course
         </a>
@@ -163,191 +202,103 @@
         <a href="#overview" class="cat-word">
             Overview
         </a>
-        <a href="#enroll" class="cat-word">
-            Enroll
-        </a>
-    </div>
-
-    <div class="alt-category">
-        <a href="#about2" class="cat-word">
-            About Course
-        </a>
-        <a href="#instructor2" class="cat-word">
-            Instructor
-        </a>
         <a href="#benefits" class="cat-word">
-            Benefits
-        </a>
-        <a href="#overview" class="cat-word">
-            Overview
-        </a>
-        <a href="#enroll" class="cat-word">
             Enroll
         </a>
     </div>
 
-    <div class="grid-display" id="about">
-            <img src="https://image.freepik.com/free-vector/wireframe-robot
-       -ai-artificial-intelligence-robotic-hand-machine-learning
-       -cyber-mind-domination-concept_127544-854.jpg" alt="workshop-image"> 
+    <div class="title my-5"  id="about">
+        About the course
+    </div>
+    <div class="grid-display">
+            <img src="https://image.freepik.com/free-vector/data-extraction-concept-illustration_114360-4766.jpg" alt="workshop-image"> 
        
     <div class="context-box">
         <div class="in-display">
-            <div class="title px-5">
-                About Course
-            </div>
             <div class="date px-5">
                 Start date: 23/10/2021
             </div>
         </div>
         <hr class="styles">
         <p class="px-5"> 
-            wje herher ckjhrjkehrjke lkjehrjkwher rkjhjkrehterhjke kjhjkeh
-            hrkehrke kejrhejkwhr kekjherkjewhr jewh rkjh krhkjh  rhljerht
-            htk erhkj jhekj hejkherjkthke oehtjkerh jerhfreer hkjerh erhre
-            ekj erhjehdkhekhejrhie kihgiehghkhkrh kehfkjdnedhfjhefkdnnfkjdn
-            fj efknndb vdf ghkjregh kjdfn vndfjkhgkjfh fd nfkjg kdfj gkjdfgnfdv
-            jjk dkjdkbkdfjnvih kfbkvj j ljd kfj dfdgjjldf kfd la;ljhf kljd kdfb shjerehj rerh erhfjker
-             jfhkerhgfk hefkef fkekn khfjkehfkjehf elefhkehf
-             f efkhfjkehfjkeh f elkfjherkjlf fek fhkjfhfkjehfjklerhflkjrehfklerhker gfkgfkhj ffjbd fedfkjedhfk
+            Donec at elit ultrices, facilisis sem quis, ultricies est. Curabitur tellus nibh,
+                 egestas ac leo quis, maximus ultrices orci. Aenean vel feugiat mauris. Nunc erat dolor,
+                iaculis id placerat ac, cursus vel purus. In sit amet tincidunt nisi. Nullam feugiat eu lectus
+                tincidunt dignissim. Aliquam sit amet justo orci. Proin a facilisis nulla. Mauris a velit a mi
+                congue ornare sit amet vitae orci. Donec ut mattis est. Orci varius natoque penatibus et magnis
+                 dis parturient montes, nascetur ridiculus mus.
         </p>
-        <hr class="styles">
-        <div class="title2">Important Dates and Shifts</div>
-        <div class="shifts">
-            <div class="details">
-                Machine Learning Introduction
-            </div>
-            <div class="date">
-                23/11/2021
-            </div>
-        </div>
-        <div class="shifts">
-            <div class="details">
-                Machine Learning Introduction
-            </div>
-            <div class="date">
-                23/11/2021
-            </div>
-        </div>
-        <div class="shifts">
-            <div class="details">
-                Machine Learning Introduction
-            </div>
-            <div class="date" >
-                23/11/2021
-            </div>
-        </div>
-        <div class="shifts">
-            <div class="details">
-                Machine Learning Introduction
-            </div>
-            <div class="date">
-                23/11/2021
-            </div>
-        </div>
+
     </div>
     </div>
-    
-    <div class="alt-display" id="about2">
-        <img class="mx-auto" src="https://image.freepik.com/free-vector/wireframe-robot
-        -ai-artificial-intelligence-robotic-hand-machine-learning
-        -cyber-mind-domination-concept_127544-854.jpg" alt="workshop-image" />
+
+    <div class="alt-display">
+        <img class="mx-auto" src="https://image.freepik.com/free-vector/data-extraction-concept-illustration_114360-4766.jpg" alt="workshop-image" />
         <div class="context-box">
             <div class="in-display">
-                <div class="title">
-                    About Course
-                </div>
                 <div class="date">
                     Start date: 23/10/2021
                 </div>
             </div>
             <hr class="styles">
             <p>
-                wje herher ckjhrjkehrjke lkjehrjkwher rkjhjkrehterhjke kjhjkeh
-                hrkehrke kejrhejkwhr kekjherkjewhr jewh rkjh krhkjh  rhljerht
-                htk erhkj jhekj hejkherjkthke oehtjkerh jerhfreer hkjerh erhre
-                ekj erhjehdkhekhejrhie kihgiehghkhkrh kehfkjdnedhfjhefkdnnfkjdn
-                fj efknndb vdf ghkjregh kjdfn vndfjkhgkjfh fd nfkjg kdfj gkjdfgnfdv
-                jjk dkjdkbkdfjnvih kfbkvj j ljd kfj dfdgjjldf kfd la;ljhf kljd kdfb
+                Donec at elit ultrices, facilisis sem quis, ultricies est. Curabitur tellus nibh,
+                 egestas ac leo quis, maximus ultrices orci. Aenean vel feugiat mauris. Nunc erat dolor,
+                iaculis id placerat ac, cursus vel purus. In sit amet tincidunt nisi. Nullam feugiat eu lectus
+                tincidunt dignissim. Aliquam sit amet justo orci. Proin a facilisis nulla. Mauris a velit a mi
+                congue ornare sit amet vitae orci. Donec ut mattis est. Orci varius natoque penatibus et magnis
+                 dis parturient montes, nascetur ridiculus mus.
             </p>
-            <hr class="styles">
-            <div class="title2">Important Dates and Shifts</div>
-            <div class="shifts">
-                <div class="details">
-                   Machine Learning Introduction
-                </div>
-                <div class="date" style="margin-right: 40px;">
-                    23/11/2021
-                </div>
-            </div>
-            <div class="shifts">
-                <div class="details">
-                    Machine Learning Introduction
-                 </div>
-                 <div class="date" style="margin-right: 40px;">
-                     23/11/2021
-                 </div>
-            </div>
-            <div class="shifts">
-                <div class="details">
-                    Machine Learning Introduction
-                 </div>
-                 <div class="date" style="margin-right: 40px;">
-                     23/11/2021
-                 </div>
-            </div>
-            <div class="shifts">
-                <div class="details">
-                    Machine Learning Introduction
-                 </div>
-                 <div class="date" style="margin-right: 40px;">
-                     23/11/2021
-                 </div>
-            </div>
            
         </div>
         
 
     </div>
 
-    <div class="grid-sec-display" id="instructor">
+    
+    <div class="title my-5"  id="instructor">
+       Instructor
+    </div>
+    <div class="grid-sec-display">
         <div class="grid-item1">
             <img src="assets_img/profile3.jpeg" alt="organisation-profile">
 
         </div>
-        <div class="grid-item2" style="background-color: #FFFFE0;">
+        <div class="grid-item2" style="background-image: linear-gradient(wheat,white);">
             <div class="skills-title">
                 Experience
             </div>
-            <p style="text-align: justify; margin-top: 20px;">oew hriue hrewirgewrhuewrjewreiwurheiuhfehjbd eghfuehfwehifehfhe iuehd
-                jhriweuhriuewy iew iehfuiehfuefhe hfhehfkjehfkjdhfdeiufhiu heihfkjedhfj ehf 
-                edhfjkdhfe r iehf ijdehjfbvduff iuedojchdjkvndfvhefuifh efihfiufehjdv
-                kejre hoieheiuhfrijh ejkrhf ehgkjef gjkegh.
+            <p style="text-align: justify; margin-top: 20px;">
+                Donec at elit ultrices, facilisis sem quis, ultricies est. Curabitur tellus nibh,
+                 egestas ac leo quis, maximus ultrices orci. Aenean vel feugiat mauris. Nunc erat dolor,
+                iaculis id placerat ac, cursus vel purus. In sit amet tincidunt nisi. Nullam feugiat eu lectus
+                tincidunt dignissim. Aliquam sit amet justo orci. Proin a facilisis nulla.
             </p>
             <div class="skills-title">
                 Skills
             </div>
-        <ul style="margin-top: 20px;">
-            <li>hkj wjrhjhlwjkhqjlkewh isuh uiwh fiuewhffhdfiudhfd</li>
-            <li>kjsrhewirh uewgrhuewrhwhehw jdwvfsufgduwygfyue</li>
-            <li>wejhyewgryuewgnwiuewiuewquieq iyqw eiuywe ewgfug</li>
-            <li>wkejhru ewgrueywgrewnrueryeuw ybfinwymwyjiufyewiyd</li>
-        </ul>
+            <ul style="list-style-type: none; text-align: left; line-height: 2rem;">
+                <li><i class="uis uis-bookmark"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd mnwhe we e2hdhjw gjhwgwge</li>
+                <li><i class="uis uis-bookmark"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd kwerhjewgf ewiuheurhewurh euhre</li>
+                <li><i class="uis uis-bookmark"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd eryuierew iuiue iehirheirherer</li>
+                <li><i class="uis uis-bookmark"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd ew jregriweiurer e heihfehiufherf</li>
+            </ul>
         </div>
-        <div class="grid-item3" style="background-color: #FFFFE0;">
+        <div class="grid-item3" style="background-image: linear-gradient(wheat,white);">
             <div class="center-flex">
                 <div class="skills-title" style="margin-bottom: 20px;">
                     Instructor name
                 </div>
-                Mr. ABCDEFG
+                <div style="text-align: center;">Mr. ABCDEFG</div>
                 <div class="skills-title" style="margin-top : 20px;">
                     Message
                 </div>
                 <p style="text-align: justify; margin-top: 20px;">
                     
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/quote-left.png"/> oiwueoiw rcehrejkwkj rhejhriuewhfiehdejknjkdhfiu 4riurhgiurhw gowifheifhiefheiur fheife
-                efie fkef djfhiurhf ifhkjfnvjkdfhgkljrfhgir hgr ghkjrhtrehqerlhfjkehkjlefhrghrkhrhg ikhr ff
-                rlkg rehgjrf girjhjkfhv jkf idjhf jkdhf ejk efherhf kjerferwnf" <img src="https://img.icons8.com/ios-glyphs/30/000000/quote-right.png"/>
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/quote-left.png"/> Donec at elit ultrices, facilisis sem quis, ultricies est. Curabitur tellus nibh,
+                    egestas ac leo quis, maximus ultrices orci. Aenean vel feugiat mauris. Nunc erat dolor,
+                   iaculis id placerat ac, cursus vel purus
+                    kejre hoieheiuhfrijh ejkrhf ehgkjef gjkegh. <img src="https://img.icons8.com/ios-glyphs/30/000000/quote-right.png"/>
                 </p>
             </div>
                 
@@ -356,30 +307,30 @@
           
     </div>
     <div class="alt-layout">
-        <div class="alt-grid1"  id="instructor2">
+        <div class="alt-grid1">
             <img src="assets_img/profile3.jpeg" alt="organisation-profile">
     
         </div>
-        <div class="alt-grid2" style="background-color: #FFFFE0;">
+        <div class="alt-grid2" style="background-image: linear-gradient(wheat,white);">
             <div class="skills-title">
                 Experience
             </div>
-            <p style="text-align: justify; margin-top: 20px;">oew hriue hrewirgewrhuewrjewreiwurheiuhfehjbd eghfuehfwehifehfhe iuehd
-                jhriweuhriuewy iew iehfuiehfuefhe hfhehfkjehfkjdhfdeiufhiu heihfkjedhfj ehf 
-                edhfjkdhfe r iehf ijdehjfbvduff iuedojchdjkvndfvhefuifh efihfiufehjdv
-                kejre hoieheiuhfrijh ejkrhf ehgkjef gjkegh.
+            <p style="text-align: justify; margin-top: 20px;">Donec at elit ultrices, facilisis sem quis, ultricies est. Curabitur tellus nibh,
+                egestas ac leo quis, maximus ultrices orci. Aenean vel feugiat mauris. Nunc erat dolor,
+               iaculis id placerat ac, cursus vel purus. In sit amet tincidunt nisi. Nullam feugiat eu lectus
+               tincidunt dignissim. Aliquam sit amet justo orci. Proin a facilisis nulla.
             </p>
             <div class="skills-title">
                 Skills
             </div>
-        <ul style="margin-top: 20px;">
-            <li>hkj wjrhjhlwjkhqjlkewh isuh uiwh fiuewhffhdfiudhfd</li>
-            <li>kjsrhewirh uewgrhuewrhwhehw jdwvfsufgduwygfyue</li>
-            <li>wejhyewgryuewgnwiuewiuewquieq iyqw eiuywe ewgfug</li>
-            <li>wkejhru ewgrueywgrewnrueryeuw ybfinwymwyjiufyewiyd</li>
-        </ul>
+            <ul style="list-style-type: none; line-height: 2rem; text-align: left;">
+                <li><i class="uis uis-bookmark"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd mnwhe we e2hdhjw gjhwgwge</li>
+                <li><i class="uis uis-bookmark"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd kwerhjewgf ewiuheurhewurh euhre</li>
+                <li><i class="uis uis-bookmark"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd eryuierew iuiue iehirheirherer</li>
+                <li><i class="uis uis-bookmark"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd ew jregriweiurer e heihfehiufherf</li>
+            </ul>
         </div>
-        <div class="alt-grid3" style="background-color: #FFFFE0;">
+        <div class="alt-grid3" style="background-image: linear-gradient(wheat,white);">
             <div class="center-flex">
                 <div class="skills-title" style="margin-bottom: 20px;">
                     Instructor name
@@ -392,50 +343,62 @@
                 </div>
                 <p style="text-align: justify; margin-top: 20px;">
                     
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/quote-left.png"/> oiwueoiw rcehrejkwkj rhejhriuewhfiehdejknjkdhfiu 4riurhgiurhw gowifheifhiefheiur fheife
-                efie fkef djfhiurhf ifhkjfnvjkdfhgkljrfhgir hgr ghkjrhtrehqerlhfjkehkjlefhrghrkhrhg ikhr ff
-                rlkg rehgjrf girjhjkfhv jkf idjhf jkdhf ejk efherhf kjerferwnf" <img src="https://img.icons8.com/ios-glyphs/30/000000/quote-right.png"/>
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/quote-left.png"/>Donec at elit ultrices, facilisis sem quis, ultricies est. Curabitur tellus nibh,
+                    egestas ac leo quis, maximus ultrices orci. Aenean vel feugiat mauris. Nunc erat dolor,
+                   iaculis id placerat ac, cursus vel purus. In sit amet tincidunt nisi.
+                    kejre hoieheiuhfrijh ejkrhf ehgkjef gjkegh. <img src="https://img.icons8.com/ios-glyphs/30/000000/quote-right.png"/>
                 </p>
             </div>
                 
                 
          </div>
     </div>
-    
 
-    <div class="covers" id="overview">
-        <div class="cover-title">
-            Prerequisites
+        <div class="grid3"  id="overview">
+            <div>
+                <div class="title my-5">
+                    Prerequisite
+                </div>
+                <div class="covers py-5">
+                    
+                    <ul style="list-style-type: none; line-height: 2rem; text-align: left;">
+                        <li><i class="uis uis-check"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd mnwhe we e2hdhjw gjhwgwge</li>
+                        <li><i class="uis uis-check"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd kwerhjewgf ewiuheurhewurh euhre</li>
+                        <li><i class="uis uis-check"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd eryuierew iuiue iehirheirherer</li>
+                        <li><i class="uis uis-check"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd ew jregriweiurer e heihfehiufherf</li>
+                    </ul>
+                </div>
+        
+            </div>
+           
+            <div>
+                <div class="title my-5">
+                    Topics Covered
+                </div>
+                <div class="covers py-5" id="overview">
+                    
+                    <ul style="list-style-type: none;line-height: 2rem; text-align: left; ">
+                        <li><i class="uis uis-check"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd mnwhe we e2hdhjw gjhwgwge</li>
+                        <li><i class="uis uis-check"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd kwerhjewgf ewiuheurhewurh euhre</li>
+                        <li><i class="uis uis-check"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd eryuierew iuiue iehirheirherer</li>
+                        <li><i class="uis uis-check"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd ew jregriweiurer e heihfehiufherf</li>
+                    </ul>
+                </div>
+        
+            </div>
         </div>
-        <ul style="list-style-type: none; ">
-            <li><i class="uis uis-corner-down-right"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd mnwhe we e2hdhjw gjhwgwge</li>
-            <li><i class="uis uis-corner-down-right"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd kwerhjewgf ewiuheurhewurh euhre</li>
-            <li><i class="uis uis-corner-down-right"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd eryuierew iuiue iehirheirherer</li>
-            <li><i class="uis uis-corner-down-right"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd ew jregriweiurer e heihfehiufherf</li>
-        </ul>
-        <div class="cover-title">
-            Topics Covered
-        </div>
-        <ul style="list-style-type: none;">
-            <li><i class="uis uis-corner-down-right"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd enbr eir diuihf bfd f gfyegf</li>
-            <li><i class="uis uis-corner-down-right"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd ebjgr rqwfiewqheghferfhei rhe3rf</li>
-            <li><i class="uis uis-corner-down-right"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd ejbf geiufyqiudwfhiehfhefdfgfr</li>
-            <li><i class="uis uis-corner-down-right"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd ed fej fyiuewqyr uihruerhfhehf</li>
-            
-        </ul>
+
+    <div class="title my-5"  id="benefits">
+        Benefits
     </div>
-
-    <div class="covers" id="benefits" style="background-color: wheat;" >
-        <div class="cover-title">
-            Benefits
-        </div>
-        <ul style="list-style-type: none; ">
-            <li><i class="uis uis-corner-down-right"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd mnwhe we e2hdhjw gjhwgwge</li>
-            <li><i class="uis uis-corner-down-right"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd kwerhjewgf ewiuheurhewurh euhre</li>
-            <li><i class="uis uis-corner-down-right"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd eryuierew iuiue iehirheirherer</li>
-            <li><i class="uis uis-corner-down-right"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd ew jregriweiurer e heihfehiufherf</li>
+    <div class="covers2 py-5" style="margin: 40px;" >
+        <ul style="list-style-type: none; line-height: 2rem; ">
+            <li><i class="uis uis-check"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd mnwhe we e2hdhjw gjhwgwge</li>
+            <li><i class="uis uis-check"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd kwerhjewgf ewiuheurhewurh euhre</li>
+            <li><i class="uis uis-check"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd eryuierew iuiue iehirheirherer</li>
+            <li><i class="uis uis-check"></i>hnfjd nlcjc bvhjsile cjchbdnd nchvjkdkd ew jregriweiurer e heihfehiufherf</li>
         </ul>
-        <button class="enroll-btn px-5" id="enroll">
+        <button class="enroll-btn px-5"  data-toggle="modal" data-target="#enrollModal">
             Enroll
         </Button>
     </div>
@@ -505,3 +468,4 @@
     </div>
   </footer>
 </html>
+
