@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to iCoder. A blog for coding enthusiasts">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/jumbotron/">
+    <!-- owl carousel  link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- owl carousel css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/features/">
+
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="events.css">
+    <script src="country-states.js"></script>
+
+    <title>checkout</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark">
+
+        <img style="width: 50px; height: 50px;"
+        src="https://media-exp1.licdn.com/dms/image/C4D0BAQHAk87E5XdEEA/company-logo_200_200/0/1626884371399?e=2159024400&v=beta&t=t07R8XeQPYmAL8mcwG0zrLovu1pGYbYGzgAy4g1Z7E8"
+        class="logo"
+      />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/stationary.html">Stationary product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/book.html">E-book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/events.html">Workshops & Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tutor.html">Tutor Online</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login to EduLearn</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get an EduLearn Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="complete-container">
+        <div class="checkout-title">
+            Checkout
+        </div>
+        <div class="form-container">
+            <div class="form-label">
+                Billing Address
+            </div>
+            <div class="billing-layout">
+                <div style="margin-right: 10px;">
+                    <label for="country">Country</label>
+                    <div>
+                        <select id="country" style="width: 200px;">
+                        <option>select country</option>
+                    </select>
+                    </div>
+                    
+                </div>
+                
+                <div>
+                    <label for="state">State</label>
+                    <div id="state-code"><input type="text" id="state"></div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                <input type="radio" id="mode1" name="pay1" value="credit">
+                <label for="mode1">Credit or Debit Card</label>
+                <img src="assets_img/visa.png" alt="visa">
+                <img src="assets_img/mastercard.jpg" alt="mastercard">
+                <img src="assets_img/amex.png" alt="amex">
+                <img src="assets_img/Rupay-Logo.png" alt="rupay">
+                <br>
+                <input type="radio" id="mode2" name="pay1" value="net">
+                <label for="mode2">Pay with Net Banking</label><br>
+                <input type="radio" id="mode4" name="pay1" value="paytm">
+                <label for="mode4">Pay with PayTM</label><img src="assets_img/paytm.png" alt="paytm" style="height: 15px; margin-left: 10px;"><br>
+                <input type="radio" id="mode3" name="pay1" value="upi">
+                <label for="mode3">Pay with UPI</label><img src="assets_img/UPI.jpg" alt="upi" style="width: 40px; height: 40px;"><br>
+                <input type="radio" id="mode5" name="pay1" value="indwallets">
+                <label for="mode5">Pay with Wallets India</label><br>
+            </div>
+
+            <div class="order-details">
+                <div class="order-title">
+                    Order Details
+                </div>
+                <img src="https://image.freepik.com/free-vector/data-extraction-concept-illustration_114360-4766.jpg" style="height: 100px; width: 100px;" alt="course-picture"/>
+                <div style="font-weight: bold;">Machine Learning Workshop</div>
+                <div class = "price"><i class="uil uil-rupee-sign">1000</i></div>
+            </div>
+            <div class="checkout-button">
+                COMPLETE THE CHECKOUT
+            </div>
+            
+        </div>
+    </section>
+ 
+</body>
+
+<script>
+    let user_country_code = "IN";
+    
+    (function () {
+       
+        let country_list = country_and_states['country'];
+        let states_list = country_and_states['states'];
+    
+     
+        let option =  '';
+        option += '<option>select country</option>';
+        for(let country_code in country_list){
+            // set selected option user country
+            let selected = (country_code == user_country_code) ? ' selected' : '';
+            option += '<option value="'+country_code+'"'+selected+'>'+country_list[country_code]+'</option>';
+        }
+        document.getElementById('country').innerHTML = option;
+    
+     
+        let text_box = '<input type="text" class="input-text" id="state">';
+        let state_code_id = document.getElementById("state-code");
+    
+        function create_states_dropdown() {
+           
+            let country_code = document.getElementById("country").value;
+            let states = states_list[country_code];
+    
+            if(!states){
+                state_code_id.innerHTML = text_box;
+                return;
+            }
+            let option = '';
+            if (states.length > 0) {
+                option = '<select id="state">\n';
+                for (let i = 0; i < states.length; i++) {
+                    option += '<option value="'+states[i].code+'">'+states[i].name+'</option>';
+                }
+                option += '</select>';
+            } else {
+           
+                option = text_box
+            }
+            state_code_id.innerHTML = option;
+        }
+    
+        // country select change event
+        const country_select = document.getElementById("country");
+        country_select.addEventListener('change', create_states_dropdown);
+    
+        create_states_dropdown();
+    })();
+    
+    
+    </script>
+   
+    <!-- Optional JavaScript -->
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+  
+</html>
