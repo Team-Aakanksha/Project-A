@@ -23,6 +23,16 @@
   padding-left: 10px;
 }
 
+.modal-body a {
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: var(--blue);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .workshop-container {
   position: relative;
   background-color: rgba(165, 42, 42, 0.4);
@@ -42,6 +52,14 @@
   justify-content: space-around;
 }
 
+.layout a {
+  border-color: blanchedalmond;
+  background-color: #fad6a4;
+  color: brown;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
 #more {
   display: none;
 }
@@ -53,6 +71,18 @@
   padding: 10px 50px;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+
+.featured-btn {
+  margin-top: 15px;
+  outline: 1px solid black;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.featured-btn:hover {
+  background-color: #222;
+  color: white;
 }
 
 .browse-menu {
@@ -391,6 +421,56 @@ li span {
   display: none;
 }
 
+/* Checkout */
+.checkout-title {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+.form-container {
+  margin: auto;
+}
+.complete-container {
+  margin: auto;
+  max-width: 800px;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: purple;
+}
+
+.billing-layout {
+  margin-top: 10px;
+  display: flex;
+}
+
+.form-container img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.order-title {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  color: purple;
+}
+
+.checkout-button {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: var(--blue);
+  background-color: var(--blue);
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
 @media only screen and (max-width: 850px) {
   .grid-item3 {
     display: none;
@@ -514,5 +594,19 @@ li span {
     font-size: 14px;
     font-family: var(--body-font);
   }
-}
 
+  .complete-container {
+    margin-right: 10px;
+    margin-left: 10px;
+    max-width: 400px;
+  }
+
+  .billing-layout {
+    margin-top: 10px;
+    display: block;
+  }
+
+  .form-label {
+    font-size: 1.5rem;
+  }
+}
