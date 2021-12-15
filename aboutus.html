@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Linking to CSS-->
+    <title>About Us</title>
+    <link rel="stylesheet" href="landing.css"/>
+
+    <!--Bootstrap-->
+    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/3357/premium/3357329.png?token=exp=1638251654~hmac=89e8ae7db5b1b0bb8ab5772a5622c8c2"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"/>
+
+    <!--GoogleFonts-->
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Major Mono Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+  </head>
+
+  <body style="background-color: #fff;">
+    <nav class="navbar navbar-dark  navbar-expand-lg bg-dark fixed-top shadow">
+
+      <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHAk87E5XdEEA/company-logo_200_200/0/1626884371399?e=2159024400&v=beta&t=t07R8XeQPYmAL8mcwG0zrLovu1pGYbYGzgAy4g1Z7E8" alt="" width="50" height="50">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="landing.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Stationary product</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="e-book.html">E-book</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="events.html">Workshops & Events</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tutor.html">Tutor Online</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <div class="mx-2">
+              <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+              <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+          </div>
+      </div>
+    </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login to EduLearn</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1"
+                              aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                              else.</small>
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Login</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Get an EduLearn Account</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1"
+                              aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                              else.</small>
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group">
+                          <label for="cexampleInputPassword1">Confirm Password</label>
+                          <input type="password" class="form-control" id="cexampleInputPassword1">
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">Create Account</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="headerpage">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-around">
+                        <div class="d-flex flex-column justify-content-center p-5 mt-5">
+                            <h1 class="au-heading">Hi!, Folks...</br> We are here to help you</h1>
+                            <p class="au-section-description">We partner with top brands to reach you at doorstep and accelerate your delievery and booking</p>
+                        </div>
+                        <div class="group-image-container ml-5 mt-5">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80" class="grp-img mt-5"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-data">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center text-center mt-5 mb-3 shadow">
+                        <p class="data m-5 p-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iure recusandae veniam distinctio a sit fuga eligendi consequatur quod animi corporis, autem et minima sapiente quibusdam nulla, cum cumque excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illo rerum numquam ratione quod doloremque, quam eligendi corporis? Libero blanditiis consectetur nobis rem totam magni ullam eos asperiores architecto dolorem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-12 mt-5">
+              <h1 class="fe-heading">Organization</h1>
+            </div>   
+            <div class="col-12 d-lg-none mt-3">
+              <div class="d-flex flex-row justify-content-start feedback-card shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="alumni-image shadow m-3 p-3"/>
+                <p class="sayings m-3 p-3 sayings">“Trust is the glue on a successful long-term relationship, whether it’s between romantic partners or a retailer and their customers, and it also happens to be the natural result of honesty and consistency.</br><span class="style">MadeFreshley, Founder</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 d-lg-none mt-3">
+              <div class="d-flex flex-row justify-content-start feedback-card shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/0/93.png" class="alumni-image shadow m-3 p-3"/>
+                <p class="m-3 p-3 sayings">“Answer all questions and respond to comments quickly! Staying on top of your social media, emails, and site comments is one of the easiest ways to continue to sale.”</br><span class="style">Rachel Daley</span> </p>
+              </div>
+            </div>
+            <div class="col-12 d-lg-none mt-3">
+              <div class="d-flex flex-row justify-content-start feedback-card shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" class="alumni-image shadow m-3 p-3"/>
+                <p class="m-3 p-3 sayings">“The best way to get more of these perfect customers is to make it easy and worth the effort for these customers to refer their friends.</br><span class="style">Sujan Patel</span> </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 d-none d-lg-block mt-3">
+              <div class="d-flex flex-column justify-content-center feedback-card shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="alumni-image shadow m-3 p-3"/>
+                <p class="m-3 p-3 sayings">“Trust is the glue on a successful long-term relationship, whether it’s between romantic partners or a  questions and respond to comments quickly!  retailer and their customers, and it also happens to be the natural result of honesty and consistency.</br><span class="style">MadeFreshley,Founder</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 d-none d-lg-block mt-3">
+              <div class="d-flex flex-column justify-content-center feedback-card shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/0/93.png" class="alumni-image shadow m-3 p-3"/>
+                <p class="m-3 p-3 sayings">“Answer all questions and respond to comments quickly! Staying on top of your social media, emails, and site comments is one of espond to comments quickly the easiest ways to continue these perfect customers is to make it to sale.”</br><span class="style">Rachel Daley,CEO</span> </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 d-none d-lg-block mt-3">
+              <div class="d-flex flex-column justify-content-center feedback-card shadow">
+                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" class="alumni-image shadow m-3 p-3"/>
+                <p class="m-3 p-3 sayings">“The best way to get more of these perfect customers is Answer all questions and respond to comments quickly! Staying on top of your social media, emails to make it easy and worth the effort for these customers to refer their friends.</br><span class="style">Sujan Patel,Manager</span> </p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="Our-Team mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="fe-heading">Our Work</h1>
+                </div>
+                <div class="col-6 col-lg-3 mt-2">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" class="team-img shadow"/>
+                </div>
+                <div class="col-6 col-lg-3 mt-2">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" class="team-img shadow"/>
+                </div>
+                <div class="col-6 col-lg-3 mt-2">
+                    <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=847&q=80" class="team-img shadow"/>
+                </div>
+                <div class="col-6 col-lg-3 mt-2">
+                    <img src="https://images.unsplash.com/photo-1558403194-611308249627?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" class="team-img shadow"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="story">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between text-center mt-3 mb-3 story-bg">
+                        <p class="Success m-5 p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dicta repellendus esse, fuga hic dignissimos dolores! Eaque eos reprehenderit adipisci! Consequuntur quasi reiciendis, quis illum molestias quidem sint architecto magnam?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="endfooter mt-5">
+        <div class="container" style="font-family: playfair display sc; color: #fff;">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-around mt-5 mb-3">
+                       <div class="d-flex flex-column justify-content-center mt-4 mr-2">
+                            <a href="" class="link logo"><img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHAk87E5XdEEA/company-logo_200_200/0/1626884371399?e=2159024400&v=beta&t=t07R8XeQPYmAL8mcwG0zrLovu1pGYbYGzgAy4g1Z7E8" alt="" width="80" height="80" class="mr-2">AAKANKSHA</a>
+                            <div class="d-flex flex-row mt-2 mb-2">
+                                <a class="link mr-2">Home</a><span> |</span>
+                                <a class="link ml-2 mr-2">About</a> <span> |</span>
+                                <a class="link ml-2 mr-2">Contact</a> <span> |</span></a>
+                                <a class="link ml-2">FAQ</a>
+                            </div>
+                            <h3 class="copy" style="font-family:playfair display sc; color: #fff;"><img src="https://cdn-icons-png.flaticon.com/512/1046/1046496.png" class="Icon2"/>Copyrights@AAKANKSHA</h3>
+                       </div>
+                       <div class="d-flex flex-column justify-content-center mt-2 ml-5 mr-5">
+                            <a href="" class="link" ><img src="https://cdn-icons-png.flaticon.com/512/535/535137.png" class="Icon mr-2"/>2-72b gandhi street</br>Bangalore,Karnataka</a>
+                            <a href="" class="link"><img src="https://cdn-icons-png.flaticon.com/512/684/684920.png" class="Icon mt-2 mr-2"/>+91 9000 011 223</a>
+                            <a href="" class="link"><img src="https://cdn-icons.flaticon.com/png/512/1386/premium/1386401.png?token=exp=1638252018~hmac=49a76c450b1a08d7643105ccb5235b96" class="Icon mt-2 mr-1"/>support@aakanksha.in</a>
+                            <a href="" class="link"><img src="https://cdn-icons-png.flaticon.com/512/4611/4611722.png" class="Icon mt-2 mr-2"/>Queries</a>
+                       </div>
+                       <div class="d-flex flex-column justify-content-center mt-2 ml-5">
+                            <h3 class="fe-heading" style="font-family: playfair display sc; color: #fff;">About Us</h3>
+                            <P class="au-section-description" style="font-family: playfair display sc; color: gold;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</br> Repudiandae voluptatem deserunt quo dignissimos repellat.</P>
+                            <div class="d-flex flex-row ml-2">
+                                <a href=""><img src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504903.png?token=exp=1638251333~hmac=25fa88816934cdca1bab61dc329782cc" class="Icon"/></a>
+                                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" class="Icon ml-2"/></a>
+                                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/1409/1409937.png" class="Icon ml-2"/></a>
+                                <a href=""><img src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504896.png?token=exp=1638251453~hmac=f9ea3448f533809c7b435c7f8380589e" class="Icon ml-2"/></a>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

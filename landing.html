@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="landing.css"/>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2258/2258446.png"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"/>
+  </head>
+  <body style="background-color: #fff;">
+    <nav class="navbar navbar-dark  navbar-expand-lg bg-dark fixed-top shadow">
+
+      <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHAk87E5XdEEA/company-logo_200_200/0/1626884371399?e=2159024400&v=beta&t=t07R8XeQPYmAL8mcwG0zrLovu1pGYbYGzgAy4g1Z7E8" alt="" width="50" height="50">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="landing.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Stationary product</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="e-book.html">E-book</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="events.html">Workshops & Events</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tutor.html">Tutor Online</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <div class="mx-2">
+              <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+              <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+          </div>
+      </div>
+    </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login to EduLearn</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1"
+                              aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                              else.</small>
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Login</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Get an EduLearn Account</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1"
+                              aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                              else.</small>
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group">
+                          <label for="cexampleInputPassword1">Confirm Password</label>
+                          <input type="password" class="form-control" id="cexampleInputPassword1">
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">Create Account</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!--Banner Section-->
+    <div class="banner-carousel mt-3 d-lg-none">
+      <div class="row">
+          <div class="col-12">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="banner-section-bg-container d-flex justify-content-center flex-column d-block w-100">
+                      <div class="text-center">
+                        <h1 class="banner-heading mb-3">Get Delicious Food Anytime</h1>
+                        <p class="banner-caption mb-4">Eat Smart & Healthy</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="banner-section-bg-container new-image1 d-flex justify-content-center flex-column d-block w-100">
+                      <div class="text-center">
+                        <h1 class="banner-heading mb-3">Get Delicious Food Anytime</h1>
+                        <p class="banner-caption mb-4">Eat Smart & Healthy</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="banner-section-bg-container new-image2 d-flex justify-content-center flex-column d-block w-100">
+                      <div class="text-center">
+                        <h1 class="banner-heading mb-3">Get Delicious Food Anytime</h1>
+                        <p class="banner-caption mb-4">Eat Smart & Healthy</p>
+                      </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+    <div class="banner-carousel mt-3 d-none d-lg-block">
+      <div class="row">
+          <div class="col-12">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="banner-section-bg-container-1 d-flex justify-content-center flex-column d-block w-100">
+                      <div class="text-center">
+                        <h1 class="banner-heading mb-3">Get Your Stationery Anytime</h1>
+                        <p class="banner-caption mb-4">Bound To Grow</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="banner-section-bg-container-1 new-image1 d-flex justify-content-center flex-column d-block w-100">
+                      <div class="text-center">
+                        <h1 class="banner-heading mb-3">One Stop Store For All Your Needs</h1>
+                        <p class="banner-caption mb-4">Add it. Get It</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="banner-section-bg-container-1 new-image2 d-flex justify-content-center flex-column d-block w-100">
+                      <div class="text-center">
+                        <h1 class="banner-heading mb-3">Educate Yourself Anywhere Anytime</h1>
+                        <p class="banner-caption mb-4">No Boundaries to Learn</p>
+                      </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>           
+    <!--About Us section-->
+    <div class="AU-section mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <h1 class="AU-section-heading">About Us</h1>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h1 class="AU-card-title mt-3">E-Store</h1>
+                    <div class="AU-card p-3 mb-3 shadow">
+                        <p class="AU-card-description"></p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h1 class="AU-card-title mt-3">E-Books</h1>
+                    <div class="AU-card1 p-3 mb-3 shadow">
+                        <p class="AU-card-description"></p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h1 class="AU-card-title mt-3">Workshop</h1>
+                    <div class="AU-card2 p-3 mb-3 shadow">
+                        <p class="AU-card-description"></p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h1 class="AU-card-title mt-3">Tutor Online</h1>
+                    <div class="AU-card3 p-3 mb-3 shadow">
+                        <p class="AU-card-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Featured Events-->
+    <div class="featured-events mt-3 p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="fe-heading m-3">Featured Events</h1>"
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="d-flex flex-column justify-content-center fe-card pt-3 pb-3 m-3 shadow">
+                        <div class="d-flex shadow m-3 p-3 fe-img">
+                          <img src="https://image.freepik.com/free-vector/man-with-laptop-analyzing-infographics-diagram-bar-chart-report-flat-vector-illustration-analysis-marketing-project-manager_74855-8454.jpg" class="fe-image">
+                        </div>
+                        <div class="d-flex flex-column justify-content-start fe-details">
+                            <h3 class="fe-heading ml-2">Data Science and Machine Learning</h3>
+                            <p class="fe-description">Starts From 23-09-2021</p>
+                            <button class="fe-button m-3">Know More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">  
+                    <div class="d-flex flex-column justify-content-center fe-card pt-3 pb-3 m-3 shadow">
+                        <div class="d-flex shadow m-3 p-3 fe-img">
+                          <img src="https://image.freepik.com/free-vector/man-with-laptop-analyzing-infographics-diagram-bar-chart-report-flat-vector-illustration-analysis-marketing-project-manager_74855-8454.jpg" class="fe-image">
+                        </div>
+                        <div class="d-flex flex-column justify-content-start fe-details">
+                            <h3 class="fe-heading ml-2">Data Science and Machine Learning</h3>
+                            <p class="fe-description">Starts From 23-09-2021</p>
+                            <button class="fe-button m-3">Know More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="d-flex flex-column justify-content-center fe-card pt-3 pb-3 m-3 shadow">
+                        <div class="d-flex shadow m-3 p-3 fe-img">
+                          <img src="https://image.freepik.com/free-vector/man-with-laptop-analyzing-infographics-diagram-bar-chart-report-flat-vector-illustration-analysis-marketing-project-manager_74855-8454.jpg" class="fe-image">
+                        </div>
+                        <div class="d-flex flex-column justify-content-start fe-details">
+                            <h3 class="fe-heading ml-2">Data Science and Machine Learning</h3>
+                            <p class="fe-description">Starts From 23-09-2021</p>
+                            <button class="fe-button m-3">Know More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Listed Stationery-->
+    <section>
+        <h1 class="product-title">Listed Stationary</h1>
+        <div class="glide" id="glide2">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                    <div class="product">
+                        <div class="product-header">
+                          <img src="pens.jpeg" alt="product">
+                        </div>
+                        <div class="product-footer">
+                          <h3>Ballpoint pens</h3>
+                          <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
+                          <div class="product-price">
+                            <h4>Location: abc shop.</h4>
+                            <h4>Price: <i class="fas fa-rupee-sign"></i>2000</h4>
+                            <a href="#"><h4 style="border: solid; margin-left: 40px; margin-right: 40px;">SHOP</h4></a>
+                          </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                  <i class="far fa-heart"></i>
+
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fas fa-shopping-cart"></i>
+                                </a>
+                              </li>
+                        </ul>
+                      </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="product">
+                        <div class="product-header">
+                          <img src="pencils.jpeg" alt="product">
+                        </div>
+                        <div class="product-footer">
+                          <h3>Pencils</h3>
+                          <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
+                          <div class="product-price">
+                            <h4>Location: abc shop.</h4>
+                            <h4>Price: <i class="fas fa-rupee-sign"></i>2000</h4>
+                            <a href="#"><h4 style="border: solid; margin-left: 40px; margin-right: 40px;">SHOP</h4></a>
+                          </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                  <i class="far fa-heart"></i>
+
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fas fa-shopping-cart"></i>
+                                </a>
+                              </li>
+                        </ul>
+                      </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="product">
+                        <div class="product-header">
+                          <img src="markers.jpeg" alt="product">
+                        </div>
+                        <div class="product-footer">
+                          <h3>Markers</h3>
+                          <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
+                          <div class="product-price">
+                            <h4>Location: abc shop.</h4>
+                            <h4>Price: <i class="fas fa-rupee-sign"></i>2000</h4>
+                            <a href="#"><h4 style="border: solid; margin-left: 40px; margin-right: 40px;">SHOP</h4></a>
+                          </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                  <i class="far fa-heart"></i>
+
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fas fa-shopping-cart"></i>
+                                </a>
+                              </li>
+                        </ul>
+                      </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="product">
+                        <div class="product-header">
+                          <img src="geometry.jpeg" alt="product">
+                        </div>
+                        <div class="product-footer">
+                          <h3>Geometry insturments</h3>
+                          <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
+                          <div class="product-price">
+                            <h4>Location: abc shop.</h4>
+                            <h4>Price: <i class="fas fa-rupee-sign"></i>2000</h4>
+                            <a href="#"><h4 style="border: solid; margin-left: 40px; margin-right: 40px;">SHOP</h4></a>
+                          </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                  <i class="far fa-heart"></i>
+
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fas fa-shopping-cart"></i>
+                                </a>
+                              </li>
+                        </ul>
+                      </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="product">
+                        <div class="product-header">
+                          <img src="sticky-notes.jpeg" alt="product">
+                        </div>
+                        <div class="product-footer">
+                          <h3>Sticky notes</h3>
+                          <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
+                          <div class="product-price">
+                            <h4>Location: abc shop.</h4>
+                            <h4>Price: <i class="fas fa-rupee-sign"></i>2000</h4>
+                            <a href="#"><h4 style="border: solid; margin-left: 40px; margin-right: 40px;">SHOP</h4></a>
+                          </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                  <i class="far fa-heart"></i>
+
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fas fa-shopping-cart"></i>
+                                </a>
+                              </li>
+                        </ul>
+                      </div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                    class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <section>
+    <!--Recommended Tutor-->
+    <div class="tutor-online mt-3">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 mt-5 p-5">
+                  <h1 class="fe-heading">Recommended Tutor</h1>
+                  <div class="d-flex flex-row justify-content-center tutor shadow">
+                    <div class="d-flex flex-column justify-content-start tutor-details p-3">
+                      <h4 class="fe-heading">Mr.Bharadwaj</h4>
+                      <p class="fe-details mt-2 mb-3">Leveraging design for over 6 years to help companies improve customer experience, increase engagement, produce impactful business strategies, and create long-lasting brands.</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-end tutor-image shadow m-5">
+                      <img src="https://cdn-icons-png.flaticon.com/512/126/126327.png" class="alumni-image"/>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 mt-3 p-5">
+                  <div class="d-flex flex-row justify-content-center tutor shadow">
+                    <div class="d-flex flex-column justify-content-start tutor-details p-3">
+                      <h4 class="fe-heading">Mr.Bharadwaj</h4>
+                      <p class="fe-details mt-2 mb-3">Leveraging design for over 6 years to help companies improve customer experience, increase engagement, produce impactful business strategies, and create long-lasting brands.</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-end tutor-image shadow m-5">
+                      <img src="https://cdn-icons-png.flaticon.com/512/126/126327.png" class="alumni-image"/>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 mt-3 p-5">
+                  <div class="d-flex flex-row justify-content-center tutor shadow">
+                    <div class="d-flex flex-column justify-content-start tutor-details p-3">
+                      <h4 class="fe-heading">Mr.Bharadwaj</h4>
+                      <p class="fe-details mt-2 mb-3">Leveraging design for over 6 years to help companies improve customer experience, increase engagement, produce impactful business strategies, and create long-lasting brands.</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-end tutor-image shadow m-5">
+                      <img src="https://cdn-icons-png.flaticon.com/512/126/126327.png" class="alumni-image"/>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--Feedback Section-->
+  <div class="container">
+      <div class="row">
+          <div class="col-12 mt-5">
+            <h1 class="fe-heading">Know From Our Peers</h1>
+          </div>
+          <div class="col-12 d-lg-none mt-3">
+            <div class="d-flex flex-row justify-content-start feedback-card shadow">
+              <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="alumni-image shadow m-3 p-3"/>
+              <p class="m-3 p-3">“Trust is the glue on a successful long-term relationship, whether it’s between romantic partners or a retailer and their customers, and it also happens to be the natural result of honesty and consistency.</br><span class="style">MadeFreshley</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-12 d-lg-none mt-3">
+            <div class="d-flex flex-row justify-content-start feedback-card shadow">
+              <img src="https://cdn-icons-png.flaticon.com/512/0/93.png" class="alumni-image shadow m-3 p-3"/>
+              <p class="m-3 p-3">“Answer all questions and respond to comments quickly! Staying on top of your social media, emails, and site comments is one of the easiest ways to continue to sale.”</br><span class="style">Rachel Daley</span> </p>
+            </div>
+          </div>
+          <div class="col-12 d-lg-none mt-3">
+            <div class="d-flex flex-row justify-content-start feedback-card shadow">
+              <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" class="alumni-image shadow m-3 p-3"/>
+              <p class="m-3 p-3">“The best way to get more of these perfect customers is to make it easy and worth the effort for these customers to refer their friends.</br><span class="style">Sujan Patel</span> </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 d-none d-lg-block mt-3">
+            <div class="d-flex flex-column justify-content-center feedback-card shadow">
+              <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="alumni-image shadow m-3 p-3"/>
+              <p class="m-3 p-3">“Trust is the glue on a successful long-term relationship, whether it’s between romantic partners or a  questions and respond to comments quickly!  retailer and their customers, and it also happens to be the natural result of honesty and consistency.</br><span class="style">MadeFreshley</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 d-none d-lg-block mt-3">
+            <div class="d-flex flex-column justify-content-center feedback-card shadow">
+              <img src="https://cdn-icons-png.flaticon.com/512/0/93.png" class="alumni-image shadow m-3 p-3"/>
+              <p class="m-3 p-3">“Answer all questions and respond to comments quickly! Staying on top of your social media, emails, and site comments is one of espond to comments quickly the easiest ways to continue these perfect customers is to make it to sale.”</br><span class="style">Rachel Daley</span> </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 d-none d-lg-block mt-3">
+            <div class="d-flex flex-column justify-content-center feedback-card shadow">
+              <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" class="alumni-image shadow m-3 p-3"/>
+              <p class="m-3 p-3">“The best way to get more of these perfect customers is Answer all questions and respond to comments quickly! Staying on top of your social media, emails to make it easy and worth the effort for these customers to refer their friends.</br><span class="style">Sujan Patel</span> </p>
+            </div>
+          </div>
+      </div>
+  </div>
+  <!--Alumni/Sponsors-->
+  <div class="alumni shadow mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="fe-heading">Our Alumni and Sponsors</h1>
+          </div>
+          <div class="col-12 mt-3 p-3">
+            <div class="d-flex flex-row justify-content-center shadow">
+              <img src="https://cdn-icons-png.flaticon.com/512/1142/1142996.png" class="alumni-image shadow m-3 p-3"/>
+              <img src="https://cdn-icons-png.flaticon.com/512/1142/1142996.png" class="alumni-image shadow m-3 p-3"/>
+              <img src="https://cdn-icons-png.flaticon.com/512/831/831327.png" class="alumni-image shadow m-3 p-3"/>
+              <img src="https://cdn-icons-png.flaticon.com/512/50/50825.png" class="alumni-image shadow m-3 p-3"/>
+              <img src="https://cdn-icons-png.flaticon.com/512/50/50436.png" class="alumni-image shadow m-3 p-3"/>
+            </div>
+          </div>
+      </div>
+  </div>   
+  <footer id="footer" class="section footer">
+    <div class="container mt-3 pt-3 shadow container-class">
+      <div class="footer-container">
+        <div class="footer-center pt-2">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center pt-2">
+        <h3>My ACCOUNT</h3>
+          <a href="#" class="">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Cart</a>
+        </div>
+        <div class="footer-center pt-2">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            ofnhui echri eciru ehnriuoi ecru
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            dnfuefecnr@gmail.com
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            123-456-789
+          </div>
+          <div>
+            <span>
+              <i class="far fa-paper-plane"></i>
+            </span>
+           djnhuec, ejhnr
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+<script src="glide.js"></script>
+</body>
+</html>

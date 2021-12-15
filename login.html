@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Linking to CSS-->
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="landing.css"/>
+
+    <!--Bootstrap-->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/942/942799.png"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"/>
+
+    <!--GoogleFonts-->
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Major Mono Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+  </head>
+
+  <body style="background-color: #fff;">
+    <nav class="navbar navbar-dark  navbar-expand-lg bg-dark fixed-top shadow">
+
+      <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHAk87E5XdEEA/company-logo_200_200/0/1626884371399?e=2159024400&v=beta&t=t07R8XeQPYmAL8mcwG0zrLovu1pGYbYGzgAy4g1Z7E8" alt="" width="50" height="50">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="landing.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Stationary product</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="e-book.html">E-book</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="events.html">Workshops & Events</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tutor.html">Tutor Online</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <div class="mx-2">
+              <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+              <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+          </div>
+      </div>
+    </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login to EduLearn</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1"
+                              aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                              else.</small>
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Login</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Get an EduLearn Account</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1"
+                              aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                              else.</small>
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group">
+                          <label for="cexampleInputPassword1">Confirm Password</label>
+                          <input type="password" class="form-control" id="cexampleInputPassword1">
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">Create Account</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="usersection" style="max-width: 100vw;">
+        <div class="row">
+            <div class="col-12 mt-5">
+                <h1 class="fe-heading mt-5" style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-2 mt-2 ml-2 mb-3">
+                <div class="d-flex flex-column justify-content-between profile-section mt-2 p-3">
+                    <div class="d-flex flex-row profile-card mt-2 mb-2">
+                       <img src="https://cdn-icons-png.flaticon.com/512/263/263417.png" class="Icon2 user-icon mr-3 mt-2 ml-2"/>
+                       <h1 class="user-heading mt-2">Favourites</h1>
+                    </div>
+                    <div class="d-flex flex-row profile-card mt-2 mb-2">
+                        <img src="https://cdn-icons.flaticon.com/png/512/3649/premium/3649310.png?token=exp=1638893485~hmac=b416b96454e0a87b8344acce0e9c3b75" class="Icon2 user-icon mr-3 mt-2 ml-2"/>
+                        <h1 class="user-heading mt-2">Recommendations</h1>
+                     </div>
+                     <div class="d-flex flex-row profile-card mt-2 mb-2">
+                        <img src="https://cdn-icons.flaticon.com/png/512/2397/premium/2397659.png?token=exp=1638893265~hmac=4ebb838a972fc1913c704c0837bb5f6f" class="Icon2 user-icon mr-3 mt-2 ml-2"/>
+                        <h1 class="user-heading mt-2">Details</h1>
+                     </div>
+                     <div class="d-flex flex-row profile-card mt-2 mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/891/891012.png" class="Icon2 user-icon mr-3 mt-2 ml-2"/>
+                        <h1 class="user-heading mt-2">Notifications</h1>
+                     </div>
+                     <div class="d-flex flex-row profile-card mt-2 mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" class="Icon2 user-icon mr-3 mt-2 ml-2"/>
+                        <h1 class="user-heading mt-2">Cart</h1>
+                     </div>
+                     <div class="d-flex flex-row profile-card mt-2 mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2665/2665038.png" class="Icon2 user-icon mr-3 mt-2 ml-2"/>
+                        <h1 class="user-heading mt-2">Reviews</h1>
+                     </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7 mt-4">
+                <div class="orders mt-5">
+                    <div class="d-flex flex-column justify-content-center">
+                        <h1 class="fe-heading mt-2 ml-2" style="color: #fff; font-size:25px">Recommendations:-</h1>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="d-flex flex-column justify-content-around recommend m-3">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/81fxf8EaTgL.jpg" class="recommend-image"/>
+                                <h4 class="recommend-heading mt-2">I Too Had A Love Story</h4>
+                                <div class="d-flex flex-row justify-content-between p-2">
+                                    <h4 class="recommend-price">RS 350</h4>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/263/263417.png" class="Icon2 user-icon mt-2 ml-2 border-icon"/>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" class="Icon2 user-icon mr-3 mt-2 ml-2 border-icon"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-around recommend m-3">
+                                <img src="https://images.routledge.com/common/jackets/originals/978041562/9780415621533.tif" class="recommend-image"/>
+                                <h4 class="recommend-heading mt-2">Hydarulic Engineering</h4>
+                                <div class="d-flex flex-row justify-content-between p-2">
+                                    <h4 class="recommend-price">RS 350</h4>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/263/263417.png" class="Icon2 user-icon mt-2 ml-2 border-icon"/>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" class="Icon2 user-icon mr-3 mt-2 ml-2 border-icon"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-around recommend m-3 text-center">
+                                <img src="https://offtheshelf.com/app/uploads/2019/09/The-Air-You-Breathe.jpg" class="recommend-image"/>
+                                <h4 class="recommend-heading mt-2">The-Air-You-Breathe</h4> 
+                                <div class="d-flex flex-row justify-content-between p-2">
+                                    <h4 class="recommend-price">RS 350</h4>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/263/263417.png" class="Icon2 user-icon mt-2 ml-2 border-icon"/>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" class="Icon2 user-icon mr-3 mt-2 ml-2 border-icon"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-around recommend m-3 text-center">
+                                <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1612555832-41pxgSgxYL.jpg" class="recommend-image"/>
+                                <h4 class="recommend-heading mt-2">Great Circle</h4>
+                                <div class="d-flex flex-row justify-content-between p-2">
+                                    <h4 class="recommend-price">RS 350</h4>
+                                    <div class="d-flex flex-row">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/263/263417.png" class="Icon2 user-icon mt-2 ml-2 border-icon"/>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" class="Icon2 user-icon mr-3 mt-2 ml-2 border-icon"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2 mt-2 profile-details ml-5 mr-5 mt-2">
+                <div class="d-flex flex-column">
+                    <div class="profile-holder mt-4 ml-5 mr-5 p-5">
+                    </div>
+                    <h1 class="fe-heading mt-2" style="color: #fff;">Name Lname</h1>
+                    <h1 class="fe-heading mt-2" style="color: #fff; font-size: 25px;">6304xxxxxx</h1>
+                    <h1 class="fe-heading mt-2" style="color: #fff; font-size: 30px;">Address:</h1>
+                    <h1 class="fe-heading " style="color: #fff; font-size: 25px;">H.no, Street Lane, Village, District, State, Pincode</h1>
+                    <div class="d-flex flex-row profile-card mt-2 mb-2">
+                        <img src="https://cdn-icons.flaticon.com/png/512/420/premium/420140.png?token=exp=1638896920~hmac=07be351504fdb214ab754dcbaf3a5288" class="Icon2 user-icon mr-3 mt-2 ml-2"/>
+                        <h1 class="user-heading mt-2">Edit</h1>
+                     </div>
+                     <div class="d-flex flex-row profile-card mt-2 mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3502/3502601.png" class="Icon2 user-icon mr-3 mt-2 ml-2"/>
+                        <h1 class="user-heading mt-2">Orders</h1>
+                     </div>
+                     <div class="d-flex flex-row profile-card mt-2 mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3649/3649801.png" class="Icon2 user-icon mr-3 mt-2 ml-2"/>
+                        <h1 class="user-heading mt-2">Premium</h1>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="endfooter mt-5">
+            <div class="container" style="font-family: playfair display sc; color: #fff;">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-row justify-content-around mt-5 mb-3">
+                           <div class="d-flex flex-column justify-content-center mt-4 mr-2">
+                                <a href="" class="link logo"><img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHAk87E5XdEEA/company-logo_200_200/0/1626884371399?e=2159024400&v=beta&t=t07R8XeQPYmAL8mcwG0zrLovu1pGYbYGzgAy4g1Z7E8" alt="" width="80" height="80" class="mr-2">AAKANKSHA</a>
+                                <div class="d-flex flex-row mt-2 mb-2">
+                                    <a class="link mr-2">Home</a><span> |</span>
+                                    <a class="link ml-2 mr-2">About</a> <span> |</span>
+                                    <a class="link ml-2 mr-2">Contact</a> <span> |</span></a>
+                                    <a class="link ml-2">FAQ</a>
+                                </div>
+                                <h3 class="copy" style="font-family:playfair display sc; color: #fff;"><img src="https://cdn-icons-png.flaticon.com/512/1046/1046496.png" class="Icon2"/>Copyrights@AAKANKSHA</h3>
+                           </div>
+                           <div class="d-flex flex-column justify-content-center mt-2 ml-5 mr-5">
+                                <a href="" class="link" ><img src="https://cdn-icons-png.flaticon.com/512/535/535137.png" class="Icon mr-2"/>2-72b gandhi street</br>Bangalore,Karnataka</a>
+                                <a href="" class="link"><img src="https://cdn-icons-png.flaticon.com/512/684/684920.png" class="Icon mt-2 mr-2"/>+91 9000 011 223</a>
+                                <a href="" class="link"><img src="https://cdn-icons.flaticon.com/png/512/1386/premium/1386401.png?token=exp=1638252018~hmac=49a76c450b1a08d7643105ccb5235b96" class="Icon mt-2 mr-1"/>support@aakanksha.in</a>
+                                <a href="" class="link"><img src="https://cdn-icons-png.flaticon.com/512/4611/4611722.png" class="Icon mt-2 mr-2"/>Queries</a>
+                           </div>
+                           <div class="d-flex flex-column justify-content-center mt-2 ml-5">
+                                <h3 class="fe-heading" style="font-family: playfair display sc; color: #fff;">About Us</h3>
+                                <P class="au-section-description" style="font-family: playfair display sc; color: gold;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</br> Repudiandae voluptatem deserunt quo dignissimos repellat.</P>
+                                <div class="d-flex flex-row ml-2">
+                                    <a href=""><img src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504903.png?token=exp=1638251333~hmac=25fa88816934cdca1bab61dc329782cc" class="Icon"/></a>
+                                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" class="Icon ml-2"/></a>
+                                    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/1409/1409937.png" class="Icon ml-2"/></a>
+                                    <a href=""><img src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504896.png?token=exp=1638251453~hmac=f9ea3448f533809c7b435c7f8380589e" class="Icon ml-2"/></a>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
